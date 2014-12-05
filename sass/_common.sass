@@ -1,3 +1,5 @@
+// *
+// 	box-shadow: 0 0 1px red
 body
 	font-family: 'Roboto', sans-serif
 	font-size: 15px 
@@ -14,7 +16,7 @@ body
 
 .out
 	position: relative
-	z-index: 1
+	z-index: 2
 // grid
 .row
 	+clr
@@ -25,11 +27,15 @@ body
 		&:first-child
 			margin-left: 0
 		&.wide
-			display: none	
+			+r(1600)
+				display: none			
 .col3
 	width: 380px
 	+r(1600)
 		width: 300px
+	&.col3_tools
+		+r(960)
+			display: none	
 .col5
 	width: 220px	
 

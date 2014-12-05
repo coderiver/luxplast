@@ -29,10 +29,11 @@ head.ready(function() {
 			$('.js-menu').addClass('is-open');
 			event.stopPropagation();
 		}
-		
+		return false;
 	});
 	$(document).on('click', function(event){
 		$('.js-menu').removeClass('is-open');
+		$('.mob-menu').removeClass('is-open');
 	});
 	$('.js-menu').on('click', function(){
 		event.stopPropagation();
@@ -44,6 +45,16 @@ head.ready(function() {
 		$('.js-menu').css('width', width);
 	};
 	menuWidth();
+
+// mobile menu toggle
+
+	$('.js-mob-menu').on('click', function(){
+		$(this).parent().toggleClass('is-open');
+		return false;
+	});
+	$('.js-mob-menu').on('click', function(){
+		event.stopPropagation();
+	})
 
 // scroll
 	$(window).scroll(function(){

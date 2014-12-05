@@ -14,6 +14,13 @@
 		+gpu
 		&.is-sticky
 			box-shadow: 0 0 4px 2px #bababa
+	&__left
+		float: left
+		width: 380px
+		+r(1600)
+			width: 300px
+		+r(960)
+			width: auto			
 	&__tools
 		float: left
 		padding-top: 40px
@@ -23,10 +30,84 @@
 			background: transparent
 			+tr(color 200ms)
 			&:hover
-				color: #d42125 	 
+				color: #d42125
+	&__right
+		float: right
+		width: 300px
+		+r(960)
+			display: none
+.mob-menu
+	display: none
+	position: relative 
+	float: right
+	padding-top: 46px
+	z-index: 999
+	+r(960)
+		display: block
+	&.is-open
+		.mob-menu__btn
+			background: #d92125
+			i
+				+s(nav-btn-act)
+		.mob-menu__dropdown
+			display: block				
+	&__btn
+		display: inline-block
+		width: 55px
+		height: 46px
+		line-height: 46px
+		text-align: center
+		i
+			display: inline-block
+			+s(nav-btn)
+		&:hover
+			i
+				+s(nav-btn-h)
+	&__dropdown
+		display: none
+		position: absolute
+		top: 92px
+		right: 0
+		width: 320px
+		background: #fff
+		box-shadow: 0 2px 3px 1px #ccc
+	&__sub
+		background: #d92125 
+		li
+			
+			border-top: 1px solid #df4245
+			&:first-child
+				border-top: none 
+			a
+				display: block
+				padding: 0 15px
+				height: 45px
+				line-height: 45px
+				text-decoration: none
+				font-size: 18px
+				color: #fff
+	&__list
+		li
+			
+			border-top: 1px solid #e8e8e8
+			&:first-child
+				border-top: none
+			a
+				display: block
+				height: 45px
+				padding: 0 15px
+				line-height: 45px
+				text-decoration: none
+				font-size: 16px
+				color: #37393a
+				&.mob-menu__bag
+					background: #e5e5e5
+					color: #d92125 	
 .logo
 	float: left
 	padding-top: 14px
+	+r(960)
+		margin-left: 15px
 	a
 		display: block
 		+hidetext
@@ -34,16 +115,51 @@
 .nav-btn-wrap
 	float: left
 	margin-left: 48px 
-	padding-top: 54px		
+	padding-top: 54px
+	+r(960)
+		display: none		
 .nav-btn
 	+s(nav-btn)
 	&:hover
 		+s(nav-btn-h) 
 .phone
 	position: relative
-	margin-left: 80px
+	margin-left: 20px
+	float: left
+	padding-left: 80px
+	width: 380px
+	+r(1600)
+		width: 300px
+	+r(960)
+		width: auto
+		padding-left: 90px
+	+r(600)
+		padding-left: 45px
+	+r(568)
+		position: absolute
+		top: 92px
+		left: 0
+		right: 0
+		margin-left: 0
+		height: 76px
+		padding-left: 0
+		background: #efefef
+		text-align: center
+		.phone__in
+			display: inline-block
+			padding-top: 15px
+			&:before
+				top: 27px  	 
 	&__in
+		position: relative 
 		padding-top: 33px
+		padding-right: 30px
+		&:before
+			content: ""
+			position: absolute
+			top: 45px
+			right: 0
+			+s(phone)		
 		& > p
 			color: #8b8b8b
 			font-size: 14px
@@ -80,17 +196,36 @@
 	padding-top: 21px
 	z-index: 2
 	.wrap
-		.col3
-			&:nth-child(2)
-				.submenu__link
-					background: #fd470e
-					&:hover
-						background: #fe4207 
-			&:last-child
-				.submenu__link
-					background: #fe6c3e
-					&:hover
-						background: #fa6435 		
+		font-size: 0
+	+r(960)
+		text-align: center
+		padding-top: 15px
+		height: 85px
+	+r(767)
+		display: none	
+	&__col3
+		float: left
+		width: 393px
+		+r(1600)
+			width: 313px
+		+r(960)
+			float: none
+			display: inline-block
+			vertical-align: top
+			width: 240px
+			margin-left: 10px
+			&:first-child
+				margin-left: 0 	
+		&:nth-child(2)
+			.submenu__link
+				background: #fd470e
+				&:hover
+					background: #fe4207 
+		&:last-child
+			.submenu__link
+				background: #fe6c3e
+				&:hover
+					background: #fa6435 		
 	&__link
 		display: block
 		height: 36px
@@ -101,21 +236,44 @@
 		text-decoration: none
 		background: #e33105
 		+tr(background 200ms)
+		text-align: left
 		&:hover
-			background: #e83c0b 
+			background: #e83c0b
+		+r(960)
+			height: 55px
+			padding: 5px 20px 
+			line-height: 1.2
 
 // banner
 .banner
 	position: relative
 	margin-bottom: 20px
-	z-index: 1		
+	min-height: 425px 
+	z-index: 1
+	+r(568)
+		min-height: 305px		
 	&__slide
 		position: relative
+		min-height: 425px
+		+r(568)
+			min-height: 305px
 	&__img
 		font-size: 0
 		img
 			width: 100%
-			height: auto  
+			min-width: 1168px
+			height: auto
+		+r(1180)
+			position: absolute
+			top: 0
+			bottom: 0
+			right: 0
+			left: 0
+			overflow: hidden
+			img
+				position: absolute
+				left: 50%
+				margin-left: -584px	 
 	&__content
 		position: absolute
 		top: 50%
@@ -129,13 +287,17 @@
 		color: #fff
 		font-weight: bold
 		text-transform: uppercase
-		line-height: 1	
+		line-height: 1
+		+r(568)
+			font-size: 28px	
 	&__text
 		font-size: 30px
 		color: #fff
 		font-weight: 300
 		span
-			color: #e22226 
+			color: #e22226
+		+r(600)
+			display: none	 
 .slick-prev
 	position: absolute
 	top: 50%
@@ -145,6 +307,8 @@
 	+hidetext
 	+r(1600)
 		+transform(translateX(-573px))
+	+r(1180)
+		display: none!important
 .slick-next
 	position: absolute
 	top: 50%
@@ -154,6 +318,8 @@
 	+hidetext
 	+r(1600)
 		+transform(translateX(573px))
+	+r(1180)
+		display: none!important
 .slick-dots
 	position: absolute
 	bottom: 27px
@@ -188,6 +354,10 @@
 		+r(1600)
 			&.wide
 				display: none
+		+r(768)
+			width: 33.3%
+			&.tablet
+				display: none		
 		&:before
 			content: ""
 			position: absolute
@@ -257,7 +427,7 @@
 		position: relative
 		float: left
 		height: 252px
-		width: 235px
+		width: 25%
 		overflow: hidden
 		margin-bottom: -1px 
 		border-bottom: 1px solid #efefef
@@ -275,7 +445,9 @@
 					border-left: none
 			&:nth-child(4n + 1)
 				.catalog__in
-					border-left: 1px solid #efefef			
+					border-left: 1px solid #efefef
+		+r(768)
+			width: 33.3%						
 	&__in
 		position: absolute
 		top: 0
@@ -478,7 +650,9 @@
 	box-shadow: 0 1px 7px rgba(1,1,1,.21)
 	+tr(transform 200ms)
 	+transform(translateX(-100%))
-	z-index: 2
+	z-index: 3
+	+r(960)
+		display: none
 	&.is-open
 		+transform(translateX(0))
 	&__in
