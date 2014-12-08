@@ -206,7 +206,7 @@ body { font-family: "Roboto", sans-serif; font-size: 15px; line-height: 1.4; }
 
 @media only screen and (max-width: 786px) { .catalog .slick-track { border-bottom: 1px solid #efefef; } }
 
-.price { position: relative; display: inline-block; padding-right: 17px; font-size: 22px; margin-bottom: 5px; font-weight: bold; }
+.price { position: relative; display: inline-block; padding-right: 17px; font-size: 22px; margin-bottom: 10px; font-weight: bold; }
 .price:before { content: ""; position: absolute; top: 50%; right: 0; -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -webkit-transform: translateY(-50%); transform: translateY(-50%); background: url('../img/icons-s7a47a24adf.png') 0 -843px no-repeat; width: 14px; height: 16px; }
 
 .quantity { font-size: 0; margin-bottom: 10px; }
