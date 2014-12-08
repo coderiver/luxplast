@@ -7,7 +7,7 @@ body
 
 =wrap
 	max-width: 1180px
-	margin: 0 auto
+	margin: 0 auto!important
 	+r(1600)
 		max-width: 940px
 
@@ -28,14 +28,18 @@ body
 			margin-left: 0
 		&.wide
 			+r(1600)
-				display: none			
+				display: none
+	+r(1280)
+		margin-left: 5%						
 .col3
 	width: 380px
 	+r(1600)
 		width: 300px
 	&.col3_tools
 		+r(960)
-			display: none	
+			display: none
+	+r(1280)
+		width: 30%			
 .col5
 	width: 220px	
 

@@ -250,6 +250,8 @@
 	margin-bottom: 20px
 	min-height: 425px 
 	z-index: 1
+	+r(768)
+		margin-bottom: 0 
 	+r(568)
 		min-height: 305px		
 	&__slide
@@ -282,6 +284,9 @@
 		+transform(translateY(-50%))
 		+r(1600)
 			max-width: 470px
+			+r(568)
+				text-align: right
+				max-width: 175px
 	&__title
 		font-size: 40px
 		color: #fff
@@ -339,22 +344,36 @@
 			+hidetext 
 		&.slick-active
 			button
-				background: #fff 	
+				background: #fff
+	.catalog &
+		li
+			button
+				border-color: #dcdcdc
+			&.slick-active
+				button
+					background: #dcdcdc
+.slick-list
+	.catalog &
+		position: relative
+		padding-bottom: 68px
 
 // m-benefits
 .m-benefits
 	position: relative
 	margin-bottom: 21px
+	+r(768)
+		display: none
 	&__list
 		+clr
 	&__item
 		position: relative
-		width: 235px
+		width: 20%
 		float: left
 		+r(1600)
+			width: 25%
 			&.wide
-				display: none
-		+r(768)
+				display: none		
+		+r(1023)
 			width: 33.3%
 			&.tablet
 				display: none		
@@ -386,34 +405,39 @@
 			&:before
 				content: ""
 				position: absolute
-				top: -6px
+				top: 50%
+				+transform(translateY(-50%))
 				left: 0
 				+s(icon1)
 		&.wholesale
 			&:before
 				content: ""
 				position: absolute
-				top: 0
+				top: 50%
+				+transform(translateY(-50%))
 				left: 5px
 				+s(icon2)
 		&.exclusive
 			&:before
 				content: ""
 				position: absolute
-				top: -3px
+				top: 50%
+				+transform(translateY(-50%))
 				left: 5px
 				+s(icon3)		
 		&.delivery
 			&:before
 				content: ""
 				position: absolute
-				top: -2px
+				top: 50%
+				+transform(translateY(-50%))
 				left: 5px
 				+s(icon4)
 		&.gifts
 			&:before
 				position: absolute
-				top: 0
+				top: 50%
+				+transform(translateY(-50%))
 				left: 5px
 				+s(icon5)		
 
@@ -422,32 +446,39 @@
 	position: relative
 	+clr
 	margin-bottom: 35px
+	border-left: 1px solid #efefef
 	z-index: 2
+	+r(768)
+		margin-bottom: 0
+	&__slide
+		float: left
+		width: 20%
+		+r(1600)
+			&.wide
+				display: none
+			width: 25%
+		+r(768)
+			width: 50% 		
 	&__item
 		position: relative
 		float: left
 		height: 252px
-		width: 25%
+		width: 100%
 		overflow: hidden
 		margin-bottom: -1px 
 		border-bottom: 1px solid #efefef
-		&:nth-child(5n)
-			.catalog__in
-				border-left: 1px solid #efefef
 		&:hover
 			overflow: visible
 			z-index: 2
 			.catalog__in
 				box-shadow: 0 1px 7px rgba(1,1,1,.19)
-		+r(1600)
-			&:nth-child(5n +1)
-				.catalog__in
-					border-left: none
-			&:nth-child(4n + 1)
-				.catalog__in
-					border-left: 1px solid #efefef
 		+r(768)
-			width: 33.3%						
+			float: none
+			&:hover
+				overflow: hidden
+				z-index: 1
+				.catalog__in
+					box-shadow: none						
 	&__in
 		position: absolute
 		top: 0
@@ -461,22 +492,28 @@
 	&__link
 		display: block
 		text-decoration: none
+		text-align: center
 		&:hover
 			.catalog__name
 				color: #d42125
 	&__img
 		font-size: 0
-		margin-bottom: 20px
+		margin-bottom: 15px
+		display: inline-block
 		img
 			max-width: 100%		
 	&__name
-		margin-bottom: 10px
+		margin-bottom: 9px
 		font-size: 16px
 		color: #37393a
 		line-height: 1.2
 		+tr(color 200ms)
 	&__buy
-		text-align: center		
+		text-align: center
+.slick-track
+	.catalog &
+		+r(786)
+			border-bottom: 1px solid #efefef
 .price
 	position: relative
 	display: inline-block
@@ -531,7 +568,9 @@
 // m-blog
 .m-blog
 	position: relative
-	z-index: 1 
+	z-index: 1
+	+r(768)
+		display: none 
 	&__title
 		position: relative
 		text-align: center
@@ -576,6 +615,8 @@
 	background: #222
 	height: 140px
 	z-index: 1
+	+r(600)
+		height: 161px
 	&__catalog
 		float: left
 		width: 220px
@@ -584,6 +625,8 @@
 			font-size: 14px
 			color: #e4e4e4
 			text-decoration: none
+		+r(1024)
+			display: none	
 	&__nav
 		float: left
 		width: 220px
@@ -594,22 +637,32 @@
 			font-size: 14px
 			color: #e4e4e4
 			text-decoration: none
+		+r(1024)
+			display: none	
 .socials
 	float: left
 	width: 220px
 	margin-right: 20px
 	+r(1600)
 		width: 140px
+	+r(1024)
+		position: absolute
+		top: 24px
+		left: 50%
+		+transform(translateX(-50%))
+		text-align: center	
 	& > p
 		margin-bottom: 12px
 		font-size: 14px
 		color: #e4e4e4 
 	&__links
-		+clr
+		font-size: 0
 		a
-			float: left
+			display: inline-block
+			vertical-align: middle
 			width: 28px
 			height: 28px
+			line-height: 28px
 			margin-left: 10px
 			text-align: center
 			border: 1px solid #3f3f3f
@@ -632,13 +685,25 @@
 	float: left
 	margin-right: 20px
 	font-size: 12px
-	color: #a7a7a7 
+	color: #a7a7a7
+	+r(1024)
+		padding-left: 15px
+	+r(600)
+		width: 100%
+		text-align: center
+		padding-top: 75px
+		span
+			display: none	 
 .design
 	float: right
 	width: 140px
 	font-size: 12px
 	color: #a7a7a7 
-
+	+r(1024)
+		text-align: right
+		padding-right: 15px
+	+r(600)
+		display: none	
 // menu
 .menu
 	position: fixed
