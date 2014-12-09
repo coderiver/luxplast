@@ -84,8 +84,11 @@
 		&:hover
 			color: #8b8b8b	  		
 	.dropdown
-		top: 43px
-		left: -100px				
+		top: 15px
+		left: -100px
+		padding-top: 37px
+		&:before
+			top: 24px				
 .form
 	text-align: left
 	padding: 30px 17px 15px
@@ -300,6 +303,7 @@
 	position: absolute
 	padding-top: 9px
 	+tr(opacity 200ms)
+	z-index: 2
 	&:before
 		content: ""
 		position: absolute
