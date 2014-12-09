@@ -176,6 +176,14 @@
 	margin-top: 45px
 	padding-left: 36px
 	font-size: 14px
+	&:hover
+		.m-bag__number
+			color: #9c9c9c
+		.m-bag__value
+			color: #9c9c9c
+		.m-bag__dropdown
+			visibility: visible
+			opacity: 1	
 	&:before
 		content: ""
 		position: absolute
@@ -184,8 +192,51 @@
 		+s(basket)
 	&__number
 		color: #d42125
+		+tr(color 200ms)
 	&__value
 		color: #37393a
+		+tr(color 200ms)
+	&__dropdown
+		visibility: hidden
+		opacity: 0
+		position: absolute
+		top: 38px
+		left: -117px
+		width: 260px
+		height: 163px
+		padding-top: 9px
+		+tr(opacity 200ms)
+		&:before
+			content: ""
+			position: absolute
+			top: -4px
+			left: 50%
+			margin-left: -9px
+			+s(dropdown-arr-top) 
+	&__in
+		height: 154px
+		background: #fff
+		box-shadow: 1px 2px 10px rgba(0,0,0,.33)
+		text-align: center
+	&__topper
+		height: 87px
+		padding-top: 22px
+		font-size: 24px
+		line-height: 1
+		font-weight: 300
+	&__text
+		font-size: 24px
+		color: #37393a
+	&__count
+		color: #d42125
+	&__checkout
+		height: 67px
+		padding-top: 18px 
+		background: #f0f0f0
+		.btn
+			width: auto
+			padding: 0 12px
+			text-decoration: none			 		  		
 .submenu
 	position: absolute
 	top: 92px
@@ -487,6 +538,7 @@
 		padding: 16px 0 20px
 		border: 1px solid #efefef
 		border-left: none
+		overflow: hidden
 		text-align: center
 		background: #FFF 
 	&__link
@@ -554,16 +606,35 @@
 		+tr(box-shadow 200ms)
 		&:focus
 			box-shadow: none
+.bestseller, .new
+	position: absolute
+	top: 8px
+	right: -21px
+	height: 24px
+	line-height: 24px
+	padding: 0 30px 
+	+transform(rotate(45deg))
+	text-align: center
+	background: #f03356
+	text-transform: uppercase
+	color: #fff
+	font-size: 14px
+	font-weight: bold
+.new
+	background: #00bcd4 	 			
 .btn
 	display: inline-block
 	width: 91px
 	height: 28px
+	line-height: 28px
+	text-decoration: none
 	background: #de2e32
 	+g(#de2e32, #d42125)
 	font-size: 12px
 	text-transform: uppercase
 	color: #fff 
 	box-shadow: 0 2px 4px rgba(1,1,1,.17)
+	+tr(background 200ms)
 
 // m-blog
 .m-blog
