@@ -35,11 +35,81 @@
 				</div>
 				<div class="header__right">
 					<div class="header__tools">
-						<div>
-							<button type="button">Вход</button>
+						<div class="login">
+							<button type="button" class="login__link">Вход</button>
+							<div class="dropdown dropdown_login">
+								<div class="dropdown__in">
+									<div class="form">
+										<form>
+											<div class="form__row">
+												<p>E-mail</p>
+												<input type="text" class="input">
+											</div>
+											<div class="form__row">
+												<p>Пароль</p>
+												<input type="text" class="input">
+											</div>
+											<div class="form__submit">
+												<span>Забыли пароль?</span>
+												<button type="submit" class="btn">войти</button>
+											</div>
+										</form>
+									</div>
+									<div class="login__socials">
+										<p>Вы можете войти через соцсети</p>
+										<ul>
+											<li><a href="#"><i class="fb-ico"></i></a></li>
+											<li><a href="#"><i class="vk-ico"></i></a></li>
+											<li><a href="#"><i class="tw-ico"></i></a></li>
+											<li><a href="#"><i class="gp-ico"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div> 
 						</div>
-						<div>
-							<button type="button">Регистрация</button>
+						<div class="registration">
+							<button type="button" class="registration__link">Регистрация</button>
+							<div class="dropdown dropdown_registration">
+								<div class="dropdown__in">
+									<div class="form">
+										<form>
+											<div class="form__row">
+												<p>Фамилия и имя</p>
+												<input type="text" class="input">
+											</div>
+											<div class="form__row">
+												<p>Название компании</p>
+												<input type="text" class="input">
+											</div>
+											<div class="form__row">
+												<p>E-mail</p>
+												<input type="text" class="input">
+											</div>
+											<div class="form__row">
+												<p>Телефон</p>
+												<input type="text" class="input">
+											</div>
+											<div class="form__row">
+												<p>Пароль</p>
+												<input type="text" class="input">
+											</div>
+											<div class="form__row">
+												<p>Повторите пароль</p>
+												<input type="text" class="input">
+											</div>
+											<div class="form__submit">
+												<button type="submit" class="btn">зарегистрироваться</button>
+											</div>
+										</form>
+									</div>
+									<!-- BEGIN  registration done-->
+									<div class="registration__done" style="display: none;">
+										<img src="img/done.png" alt="">
+										<p>Вы успешно зарегистрировались</p>
+									</div>
+									<!-- END  registration done-->
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="m-bag">
@@ -49,8 +119,8 @@
 						<div class="m-bag__value">
 							на 100 000 руб
 						</div>
-						<div class="m-bag__dropdown">
-							<div class="m-bag__in">
+						<div class="dropdown">
+							<div class="dropdown__in">
 								<div class="m-bag__topper">
 									<div class="m-bag__text">В корзине</div>
 									<div class="m-bag__count">15 товаров</div>
