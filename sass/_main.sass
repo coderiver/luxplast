@@ -336,6 +336,10 @@
 	&__col3
 		float: left
 		width: 393px
+		&:hover
+			.submenu__dropdown
+				visibility: visible
+				opacity: 1 
 		+r(1600)
 			width: 313px
 		+r(960)
@@ -347,6 +351,9 @@
 			&:first-child
 				margin-left: 0 	
 		&:nth-child(2)
+			.submenu__dropdown
+				&:before
+					left: 50%
 			.submenu__link
 				background: #fd470e
 				&:hover
@@ -355,7 +362,11 @@
 			.submenu__link
 				background: #fe6c3e
 				&:hover
-					background: #fa6435 		
+					background: #fa6435
+			.submenu__dropdown
+				&:before
+					left: 82%
+					+arr(19, 10, #fff, t) 		 		
 	&__link
 		display: block
 		height: 36px
@@ -374,13 +385,32 @@
 			padding: 5px 20px 
 			line-height: 1.2
 	&__dropdown
+		visibility: hidden
+		opacity: 0 
 		position: absolute
-		top: 56px
+		top: 36px
 		left: 0
 		right: 0
+		padding-top: 20px
+		+tr(opacity 200ms)
+		&:before
+			content: ""
+			position: absolute
+			top: 10px
+			left: 16%
+			+arr(19, 10, #f0f0f0, t)
+		+r(960)
+			left: 50%
+			+transform(translateX(-50%))
+			right: auto
+			top: 50px
+			width: 740px
+		+r(768)
+			display: none	 	
+	&__dropdown-in
 		+clr
 		box-shadow: 1px 2px 8px rgba(0,0,0,.33)
-		background: #fff 
+		background: #fff		
 	&__catalog
 		float: left
 		width: 66%
