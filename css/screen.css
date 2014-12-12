@@ -26,6 +26,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 body { font-family: "Roboto", sans-serif; font-size: 15px; line-height: 1.4; }
+body.no-scroll { overflow: hidden; }
 
 .wrap { max-width: 1180px; margin: 0 auto !important; }
 @media only screen and (max-width: 1600px) { .wrap { max-width: 940px; } }
@@ -141,7 +142,8 @@ body { font-family: "Roboto", sans-serif; font-size: 15px; line-height: 1.4; }
 .mob-menu__btn { display: inline-block; width: 55px; height: 46px; line-height: 46px; text-align: center; }
 .mob-menu__btn i { display: inline-block; background: url('../img/icons-sb7262879e8.png') 0 -796px no-repeat; width: 25px; height: 19px; }
 .mob-menu__btn:hover i { background: url('../img/icons-sb7262879e8.png') 0 -767px no-repeat; width: 25px; height: 19px; }
-.mob-menu__dropdown { display: none; position: absolute; top: 92px; right: 0; width: 320px; background: white; box-shadow: 0 2px 3px 1px #cccccc; max-height: 228px; overflow-y: auto; }
+.mob-menu__dropdown { display: none; position: absolute; top: 92px; right: 0; width: 320px; background: white; box-shadow: 0 2px 3px 1px #cccccc; overflow-y: auto; }
+@media only screen and (max-width: 480px) { .mob-menu__dropdown { max-height: 228px; } }
 @media only screen and (max-width: 360px) { .mob-menu__dropdown { max-height: 388px; } }
 .mob-menu__sub { background: #d92125; }
 .mob-menu__sub li { border-top: 1px solid #df4245; }
