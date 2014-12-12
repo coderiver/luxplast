@@ -35,6 +35,7 @@ head.ready(function() {
 		$('.js-menu').removeClass('is-open');
 		$('.mob-menu').removeClass('is-open');
 		$('body').removeClass('no-scroll');
+		$('html').removeClass('no-scroll');
 	});
 	$('.js-menu').on('click', function(){
 		event.stopPropagation();
@@ -52,6 +53,7 @@ head.ready(function() {
 	$('.js-mob-menu').on('click', function(){
 		$(this).parent().toggleClass('is-open');
 		$('body').toggleClass('no-scroll');
+		$('html').toggleClass('no-scroll');
 		return false;
 	});
 	$('.js-mob-menu').on('click', function(){
