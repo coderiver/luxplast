@@ -1,0 +1,99 @@
+// styles for category page
+.category
+    position: relative
+    &__topper
+        +clr
+        margin-bottom: 15px
+        +r(600)
+            margin-top: 15px
+    &__filters
+        float: right
+        font-size: 0
+        +r(480) 
+            float: none
+            +clr
+    &__view, &__sortby
+        display: inline-block
+        vertical-align: middle
+        li
+            display: inline-block
+            vertical-align: middle
+            a
+                font-size: 14px
+                color: #8b8b8b
+                text-decoration: none
+                +tr(color 200ms)
+                &:hover, &.is-active
+                    color: #333            
+    &__view
+        margin-left: 85px
+        +r(480)
+            float: right
+            margin-left: 0 
+        li
+            margin-left: 12px
+            &:first-child
+                margin-left: 0
+            a
+                &.is-active, &:hover
+                    .list-ico
+                        +s(list-h)
+                    .grid-ico
+                        +s(grid-h)     
+    &__sortby
+        +r(480)
+            float: left
+        li
+            margin-left: 25px 
+            &:first-child
+                margin-left: 0
+    &__main
+        +clr
+        .catalog
+            +r(768)
+                margin-bottom: 35px
+        .catalog__item
+            width: 25%
+            +r(1600)
+                width: 33.3%
+            +r(768)
+                width: 50%
+                float: left
+            +r(420)
+                width: 100%         
+    &__aside
+        float: left
+        width: 230px
+        margin-top: 34px
+        +r(768)
+            width: 180px
+        +r(600)
+            width: 100%    
+    &__content
+        overflow: hidden
+        +r(600)
+            width: 100%    
+.filter 
+    background: #F0F0F0       
+    &__block
+        padding: 19px 
+        border-bottom: 1px solid #fff
+        .checkbox
+            margin-bottom: 10px
+        +r(600)
+            padding: 10px
+            margin-left: -10px 
+            .checkbox
+                display: inline-block
+                margin-left: 10px
+    &__title
+        font-size: 16px
+        color: #37393a
+        margin-bottom: 15px
+        +r(600)
+            margin-left: 10px
+    &__bottom
+        text-align: center
+        padding: 20px 0
+        background: #e7e7e7           
+                                        
