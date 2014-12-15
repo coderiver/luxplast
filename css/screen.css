@@ -60,7 +60,9 @@ body.no-scroll, html.no-scroll { overflow: hidden; }
 
 .h2 { font-size: 24px; font-weight: bold; text-transform: uppercase; color: #333333; }
 
-.input { width: 100%; height: 28px; padding: 0 5px; border: 1px solid #d3d2d2; background-color: white; box-shadow: inset 0 0 5px rgba(1, 1, 1, 0.3); font-family: "Roboto", sans-serif; font-size: 14px; }
+.input, .textarea { width: 100%; height: 28px; padding: 0 5px; border: 1px solid #d3d2d2; background-color: white; box-shadow: inset 0 0 3px rgba(1, 1, 1, 0.3); font-family: "Roboto", sans-serif; font-size: 14px; }
+
+.textarea { height: 144px; padding: 5px; resize: none; }
 
 .checkbox { position: relative; display: block; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
 .checkbox input { position: absolute; opacity: 0; }
@@ -444,8 +446,14 @@ body.no-scroll, html.no-scroll { overflow: hidden; }
 @media only screen and (max-width: 600px) { .contacts__topper { text-align: center; } }
 .contacts__topper .h2 { float: left; }
 @media only screen and (max-width: 600px) { .contacts__topper .h2 { width: 100%; margin-bottom: 10px; } }
-.contacts__topper .btn { float: right; }
-@media only screen and (max-width: 600px) { .contacts__topper .btn { float: none; } }
+.contacts__feedback { position: relative; float: right; }
+@media only screen and (max-width: 600px) { .contacts__feedback { width: 100%; } }
+.contacts__feedback .dropdown { top: 46px; right: 0; width: 300px; }
+.contacts__feedback .dropdown:before { margin-left: 0; left: 74%; }
+@media only screen and (max-width: 600px) { .contacts__feedback .dropdown { right: 50%; -moz-transform: translateX(50%); -ms-transform: translateX(50%); -webkit-transform: translateX(50%); transform: translateX(50%); }
+  .contacts__feedback .dropdown:before { left: 50%; margin-left: -9px; } }
+.contacts__feedback .dropdown.is-open { visibility: visible; opacity: 1; }
+.contacts__feedback .btn.is-open { background: #9e9e9e; box-shadow: inset 0 0 5px rgba(1, 1, 1, 0.45); }
 .contacts__info { *zoom: 1; margin-bottom: 25px; }
 .contacts__info:after { content: " "; display: table; clear: both; }
 .contacts__col { float: left; width: 33%; font-size: 16px; color: #37393a; }

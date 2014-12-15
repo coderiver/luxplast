@@ -11,10 +11,31 @@
             +r(600)
                 width: 100%
                 margin-bottom: 10px
-        .btn
-            float: right
+    &__feedback
+        position: relative
+        float: right
+        +r(600)
+            width: 100%
+        .dropdown
+            top: 46px
+            right: 0
+            width: 300px
+            &:before
+                margin-left: 0
+                left: 74%
             +r(600)
-                float: none
+                right: 50%
+                +transform(translateX(50%))
+                &:before
+                    left: 50%
+                    margin-left: -9px    
+            &.is-open
+                visibility: visible
+                opacity: 1
+        .btn
+            &.is-open
+                background: #9e9e9e
+                box-shadow: inset 0 0 5px rgba(1,1,1,.45)
     &__info
         +clr
         margin-bottom: 25px
