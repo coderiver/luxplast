@@ -254,7 +254,12 @@
 				left: -120px
 				padding-top: 16px
 				&:before
-					top: 3px 			
+					top: 3px
+				+r(568)
+					left: -216px
+					&:before
+						margin-left: 0
+						left: 83%	 			
 		& > p
 			color: #8b8b8b
 			font-size: 14px
@@ -809,17 +814,12 @@
 .price
 	position: relative
 	display: inline-block
-	padding-right: 17px
 	font-size: 22px
 	margin-bottom: 10px
 	font-weight: bold
-	&:before
-		content: ""
-		position: absolute
-		top: 50%
-		right: 0
-		+transform(translateY(-50%))
-		+s(rub)
+	&:after
+		content: "a"
+		+rub
 .quantity
 	font-size: 0
 	margin-bottom: 10px

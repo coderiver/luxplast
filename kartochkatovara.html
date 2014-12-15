@@ -1,0 +1,749 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>kartochkatovara</title>
+	<meta name="viewport" content="initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <meta name="viewport" content="width=1200"> -->
+	<!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" media="all" href="css/slick.css" >
+	<link rel="stylesheet" media="all" href="css/screen.css" >
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+<!-- BEGIN  out-->
+<div class="out">
+	<!-- BEGIN  header-->
+	<header class="header">
+		<div class="header__wrap">
+			<div class="header__in">
+				<div class="wrap row">
+					<div class="header__left">
+						<h1 class="logo">
+							<a href="#">laxplast</a>
+						</h1>
+						<div class="nav-btn-wrap">
+							<button class="nav-btn js-nav-btn"></button>
+						</div>
+					</div>
+					<div class="phone">
+						<div class="phone__in">
+							<p>Круглосуточная поддержка</p>
+							<a href="tel:8 800 200 200">8 800 200 200</a>
+							<div class="callback-wrap">
+								<div class="callback"></div>
+								<div class="dropdown">
+									<div class="dropdown__in">
+										<div class="form">
+											<form>
+												<div class="form__row">
+													<p>Имя</p>
+													<input type="text" class="input">
+												</div>
+												<div class="form__row">
+													<p>Телефон</p>
+													<input type="text" class="input">
+												</div>
+												<div class="form__submit">
+													<button type="submit" class="btn">Заказать звонок</button>
+												</div>
+											</form>
+										</div>
+									</div>	
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header__right">
+						<div class="header__tools">
+							<div class="login">
+								<button type="button" class="login__link">Вход</button>
+								<div class="dropdown dropdown_login">
+									<div class="dropdown__in">
+										<div class="form">
+											<form>
+												<div class="form__row">
+													<p>E-mail</p>
+													<input type="text" class="input">
+												</div>
+												<div class="form__row">
+													<p>Пароль</p>
+													<input type="text" class="input">
+												</div>
+												<div class="form__submit">
+													<span>Забыли пароль?</span>
+													<button type="submit" class="btn">войти</button>
+												</div>
+											</form>
+										</div>
+										<div class="login__socials">
+											<p>Вы можете войти через соцсети</p>
+											<ul>
+												<li><a href="#"><i class="fb-ico"></i></a></li>
+												<li><a href="#"><i class="vk-ico"></i></a></li>
+												<li><a href="#"><i class="tw-ico"></i></a></li>
+												<li><a href="#"><i class="gp-ico"></i></a></li>
+											</ul>
+										</div>
+									</div>
+								</div> 
+							</div>
+							<div class="registration">
+								<button type="button" class="registration__link">Регистрация</button>
+								<div class="dropdown dropdown_registration">
+									<div class="dropdown__in">
+										<div class="form">
+											<form>
+												<div class="form__row">
+													<p>Фамилия и имя</p>
+													<input type="text" class="input">
+												</div>
+												<div class="form__row">
+													<p>Название компании</p>
+													<input type="text" class="input">
+												</div>
+												<div class="form__row">
+													<p>E-mail</p>
+													<input type="text" class="input">
+												</div>
+												<div class="form__row">
+													<p>Телефон</p>
+													<input type="text" class="input">
+												</div>
+												<div class="form__row">
+													<p>Пароль</p>
+													<input type="text" class="input">
+												</div>
+												<div class="form__row">
+													<p>Повторите пароль</p>
+													<input type="text" class="input">
+												</div>
+												<div class="form__submit">
+													<button type="submit" class="btn">зарегистрироваться</button>
+												</div>
+											</form>
+										</div>
+										<!-- BEGIN  registration done-->
+										<div class="registration__done" style="display: none;">
+											<img src="img/done.png" alt="">
+											<p>Вы успешно зарегистрировались</p>
+										</div>
+										<!-- END  registration done-->
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="m-bag">
+							<div class="m-bag__number">
+								15 товаров
+							</div>
+							<div class="m-bag__value">
+								на 100 000 руб
+							</div>
+							<div class="dropdown">
+								<div class="dropdown__in">
+									<div class="m-bag__topper">
+										<div class="m-bag__text">В корзине</div>
+										<div class="m-bag__count">15 товаров</div>
+									</div>
+									<div class="m-bag__checkout">
+										<a href="#" class="btn">оформить заказ</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mob-menu">
+						<a href="#" class="mob-menu__btn js-mob-menu"><i></i></a>
+						<div class="mob-menu__dropdown">
+							<ul class="mob-menu__sub">
+								<li>
+									<a href="#">Пакеты с пластиковой ручкой</a>
+								</li>
+								<li>
+									<a href="#">Пакеты с петлевой ручкой</a>
+								</li>
+								<li>
+									<a href="#">Пакеты с прорубной ручкой</a>
+								</li>
+							</ul>
+							<ul class="mob-menu__list">
+								<li><a href="#">О компании</a></li>
+								<li><a href="#">Блог</a></li>
+								<li><a href="#">Поддержка</a></li>
+								<li><a href="#">Доставка</a></li>
+								<li><a href="#">Вход</a></li>
+								<li><a href="#">Регистрация</a></li>
+								<li><a href="#" class="mob-menu__bag">В корзине 15 товаров</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="submenu">
+			<div class="wrap row">
+				<div class="submenu__col3">
+					<a href="#" class="submenu__link is-active">Пакеты с петлевой ручкой</a>
+					<div class="submenu__dropdown">
+						<div class="submenu__dropdown-in">
+							<ul class="submenu__catalog">
+								<li class="submenu__item">
+									<a href="#">
+										<div class="submenu__img">
+											<img src="img/img1.png" alt="">
+										</div>
+										<div class="submenu__dims">50x50</div>
+									</a>
+								</li>
+								<li class="submenu__item">
+									<a href="#">
+										<div class="submenu__img">
+											<img src="img/img1.png" alt="">
+										</div>
+										<div class="submenu__dims">50x50</div>
+									</a>
+								</li>
+								<li class="submenu__item">
+									<a href="#">
+										<div class="submenu__img">
+											<img src="img/img1.png" alt="">
+										</div>
+										<div class="submenu__dims">50x50</div>
+									</a>
+								</li>
+								<li class="submenu__item">
+									<a href="#">
+										<div class="submenu__img">
+											<img src="img/img1.png" alt="">
+										</div>
+										<div class="submenu__dims">50x50</div>
+									</a>
+								</li>
+								<li class="submenu__item">
+									<a href="#">
+										<div class="submenu__img">
+											<img src="img/img1.png" alt="">
+										</div>
+										<div class="submenu__dims">50x50</div>
+									</a>
+								</li>
+								<li class="submenu__item">
+									<a href="#">
+										<div class="submenu__img">
+											<img src="img/img1.png" alt="">
+										</div>
+										<div class="submenu__dims">50x50</div>
+									</a>
+								</li>
+							</ul>
+							<div class="submenu__bestseller">
+								<a href="#">
+									<div class="bestseller">хит</div>
+									<img src="img/img2.png" alt="">
+									<p>40х40х10 </p>
+									<p>Розовая роза</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="submenu__col3">
+					<a href="#" class="submenu__link">Пакеты с пластиковой ручкой</a>
+					<div class="submenu__dropdown">
+						<div class="submenu__dropdown-in">
+							<ul class="submenu__catalog">
+								<li class="submenu__item">
+									<a href="#">
+										<div class="submenu__img">
+											<img src="img/img1.png" alt="">
+										</div>
+										<div class="submenu__dims">50x50</div>
+									</a>
+								</li>
+								<li class="submenu__item">
+									<a href="#">
+										<div class="submenu__img">
+											<img src="img/img1.png" alt="">
+										</div>
+										<div class="submenu__dims">50x50</div>
+									</a>
+								</li>
+								<li class="submenu__item">
+									<a href="#">
+										<div class="submenu__img">
+											<img src="img/img1.png" alt="">
+										</div>
+										<div class="submenu__dims">50x50</div>
+									</a>
+								</li>
+								<li class="submenu__item">
+									<a href="#">
+										<div class="submenu__img">
+											<img src="img/img1.png" alt="">
+										</div>
+										<div class="submenu__dims">50x50</div>
+									</a>
+								</li>
+								<li class="submenu__item">
+									<a href="#">
+										<div class="submenu__img">
+											<img src="img/img1.png" alt="">
+										</div>
+										<div class="submenu__dims">50x50</div>
+									</a>
+								</li>
+								<li class="submenu__item">
+									<a href="#">
+										<div class="submenu__img">
+											<img src="img/img1.png" alt="">
+										</div>
+										<div class="submenu__dims">50x50</div>
+									</a>
+								</li>
+							</ul>
+							<div class="submenu__bestseller">
+								<a href="#">
+									<div class="bestseller">хит</div>
+									<img src="img/img2.png" alt="">
+									<p>40х40х10 </p>
+									<p>Розовая роза</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="submenu__col3">
+					<a href="#" class="submenu__link">Пакеты с прорубной ручкой</a>
+					<div class="submenu__dropdown">
+						<div class="submenu__dropdown-in">
+							<ul class="submenu__catalog">
+								<li class="submenu__item">
+									<a href="#">
+										<div class="submenu__img">
+											<img src="img/img1.png" alt="">
+										</div>
+										<div class="submenu__dims">50x50</div>
+									</a>
+								</li>
+								<li class="submenu__item">
+									<a href="#">
+										<div class="submenu__img">
+											<img src="img/img1.png" alt="">
+										</div>
+										<div class="submenu__dims">50x50</div>
+									</a>
+								</li>
+								<li class="submenu__item">
+									<a href="#">
+										<div class="submenu__img">
+											<img src="img/img1.png" alt="">
+										</div>
+										<div class="submenu__dims">50x50</div>
+									</a>
+								</li>
+								<li class="submenu__item">
+									<a href="#">
+										<div class="submenu__img">
+											<img src="img/img1.png" alt="">
+										</div>
+										<div class="submenu__dims">50x50</div>
+									</a>
+								</li>
+								<li class="submenu__item">
+									<a href="#">
+										<div class="submenu__img">
+											<img src="img/img1.png" alt="">
+										</div>
+										<div class="submenu__dims">50x50</div>
+									</a>
+								</li>
+								<li class="submenu__item">
+									<a href="#">
+										<div class="submenu__img">
+											<img src="img/img1.png" alt="">
+										</div>
+										<div class="submenu__dims">50x50</div>
+									</a>
+								</li>
+							</ul>
+							<div class="submenu__bestseller">
+								<a href="#">
+									<div class="bestseller">хит</div>
+									<img src="img/img2.png" alt="">
+									<p>40х40х10 </p>
+									<p>Розовая роза</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- END  header-->
+	<div class="wrap">
+		<!-- BEGIN  content-->
+		<div class="content">
+			<h2 class="h2">Пакет с пластиковой ручкой, 40 х 40, скотч стайл</h2>
+			<div class="card">
+				<div class="card__info">
+					<div class="order">
+						<div class="order__topper">
+							<div class="price-wrap">
+								<p>Цена:</p>
+								<span class="price">20</span>
+								<p>/шт</p>
+							</div>
+							<div class="order__details">Упаковка: 50 шт / 100 кг / 1 м<sup>3</sup></div>
+						</div>
+						<div class="order__number">
+							<div class="quantity">
+								<a href="#" class="quantity__less"></a>
+								<input type="text" class="quantity__input" placeholder="100 шт">
+								<a href="#" class="quantity__more"></a>
+							</div>
+							<div class="order__details">
+								200 кг / 2 м<sup>3</sup>
+							</div>
+						</div>
+						<div class="order__bottom">
+							<div class="price-wrap">
+								<p>Сумма:</p>
+								<span class="price">2000</span>
+							</div>
+							<div class="order__submit">
+								<button class="btn">добавить в корзину</button>
+							</div>
+						</div>
+					</div>
+					<div class="card__about">
+						<div class="card__text">
+							<p><b>О товаре</b></p>
+							<p>В Харьковском реальном училище Шимен продолжил обучение и окончил его в 1917 году. Далее с 1918 по 1921 год Кузнец учился в Харьковском фоне событий Первой мировой войны и выселения прифронтовой</p>
+						</div>
+						<div class="card__socials">
+							<p>Поделиться:</p>
+							<ul>
+								<li><a href="#"><i class="fb-ico"></i></a></li>
+								<li><a href="#"><i class="vk-ico"></i></a></li>
+								<li><a href="#"><i class="tw-ico"></i></a></li>
+								<li><a href="#"><i class="gp-ico"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="card__img">
+					<img src="img/img4.jpg" alt="">
+				</div>
+			</div>
+			<h3 class="h3">Так же рекоммендуем</h3>
+			<!-- BEGIN  catalog-->
+			<div class="catalog catalog_card js-catalog">
+				<div class="catalog__slide js-catalog-slide">
+					<div class="catalog__item">
+						<div class="catalog__in">
+						<div class="bestseller">хит</div>
+						<a href="#" class="catalog__link">
+							<div class="catalog__img">
+								<img src="img/img1.png" alt="">
+							</div>
+							<div class="catalog__name">
+								<p>сп 36х34х10</p>
+								<p>Блоссом антквар</p> 
+							</div>
+						</a>
+						<div class="price">10</div>
+						<div class="quantity">
+							<a href="#" class="quantity__less"></a>
+							<input type="text" class="quantity__input" placeholder="100 шт">
+							<a href="#" class="quantity__more"></a>
+						</div>
+						<div class="catalog__buy">
+							<button class="btn">в корзину</button>
+						</div>
+						</div>
+					</div>
+					<div class="catalog__item">
+						<div class="catalog__in">
+						<div class="new">NEW</div>
+						<a href="#" class="catalog__link">
+							<div class="catalog__img">
+								<img src="img/img1.png" alt="">
+							</div>
+							<div class="catalog__name">
+								<p>сп 36х34х10</p>
+								<p>Блоссом антквар</p> 
+							</div>
+						</a>
+						<div class="price">10</div>
+						<div class="quantity">
+							<a href="#" class="quantity__less"></a>
+							<input type="text" class="quantity__input" placeholder="100 шт">
+							<a href="#" class="quantity__more"></a>
+						</div>
+						<div class="catalog__buy">
+							<button class="btn">в корзину</button>
+						</div>
+						</div>
+					</div>
+				</div>
+				<div class="catalog__slide js-catalog-slide">
+				<div class="catalog__item">
+					<div class="catalog__in">
+						<a href="#" class="catalog__link">
+							<div class="catalog__img">
+								<img src="img/img1.png" alt="">
+							</div>
+							<div class="catalog__name">
+								<p>сп 36х34х10</p>
+								<p>Блоссом антквар</p> 
+							</div>
+						</a>
+						<div class="price">10</div>
+						<div class="quantity">
+							<a href="#" class="quantity__less"></a>
+							<input type="text" class="quantity__input" placeholder="100 шт">
+							<a href="#" class="quantity__more"></a>
+						</div>
+						<div class="catalog__buy">
+							<button class="btn">в корзину</button>
+						</div>
+					</div>
+				</div>
+				<div class="catalog__item">
+					<div class="catalog__in">
+						<a href="#" class="catalog__link">
+							<div class="catalog__img">
+								<img src="img/img1.png" alt="">
+							</div>
+							<div class="catalog__name">
+								<p>сп 36х34х10</p>
+								<p>Блоссом антквар</p> 
+							</div>
+						</a>
+						<div class="price">10</div>
+						<div class="quantity">
+							<a href="#" class="quantity__less"></a>
+							<input type="text" class="quantity__input" placeholder="100 шт">
+							<a href="#" class="quantity__more"></a>
+						</div>
+						<div class="catalog__buy">
+							<button class="btn">в корзину</button>
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class="catalog__slide js-catalog-slide">
+				<div class="catalog__item">
+					<div class="catalog__in">
+						<a href="#" class="catalog__link">
+							<div class="catalog__img">
+								<img src="img/img1.png" alt="">
+							</div>
+							<div class="catalog__name">
+								<p>сп 36х34х10</p>
+								<p>Блоссом антквар</p> 
+							</div>
+						</a>
+						<div class="price">10</div>
+						<div class="quantity">
+							<a href="#" class="quantity__less"></a>
+							<input type="text" class="quantity__input" placeholder="100 шт">
+							<a href="#" class="quantity__more"></a>
+						</div>
+						<div class="catalog__buy">
+							<button class="btn">в корзину</button>
+						</div>
+					</div>
+				</div>
+				<div class="catalog__item">
+					<div class="catalog__in">
+						<a href="#" class="catalog__link">
+							<div class="catalog__img">
+								<img src="img/img1.png" alt="">
+							</div>
+							<div class="catalog__name">
+								<p>сп 36х34х10</p>
+								<p>Блоссом антквар</p> 
+							</div>
+						</a>
+						<div class="price">10</div>
+						<div class="quantity">
+							<a href="#" class="quantity__less"></a>
+							<input type="text" class="quantity__input" placeholder="100 шт">
+							<a href="#" class="quantity__more"></a>
+						</div>
+						<div class="catalog__buy">
+							<button class="btn">в корзину</button>
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class="catalog__slide js-catalog-slide">
+				<div class="catalog__item">
+					<div class="catalog__in">
+						<a href="#" class="catalog__link">
+							<div class="catalog__img">
+								<img src="img/img1.png" alt="">
+							</div>
+							<div class="catalog__name">
+								<p>сп 36х34х10</p>
+								<p>Блоссом антквар</p> 
+							</div>
+						</a>
+						<div class="price">10</div>
+						<div class="quantity">
+							<a href="#" class="quantity__less"></a>
+							<input type="text" class="quantity__input" placeholder="100 шт">
+							<a href="#" class="quantity__more"></a>
+						</div>
+						<div class="catalog__buy">
+							<button class="btn">в корзину</button>
+						</div>
+					</div>
+				</div>
+				<div class="catalog__item">
+					<div class="catalog__in">
+						<a href="#" class="catalog__link">
+							<div class="catalog__img">
+								<img src="img/img1.png" alt="">
+							</div>
+							<div class="catalog__name">
+								<p>сп 36х34х10</p>
+								<p>Блоссом антквар</p> 
+							</div>
+						</a>
+						<div class="price">10</div>
+						<div class="quantity">
+							<a href="#" class="quantity__less"></a>
+							<input type="text" class="quantity__input" placeholder="100 шт">
+							<a href="#" class="quantity__more"></a>
+						</div>
+						<div class="catalog__buy">
+							<button class="btn">в корзину</button>
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class="catalog__slide wide">
+				<div class="catalog__item">
+					<div class="catalog__in">
+						<a href="#" class="catalog__link">
+							<div class="catalog__img">
+								<img src="img/img1.png" alt="">
+							</div>
+							<div class="catalog__name">
+								<p>сп 36х34х10</p>
+								<p>Блоссом антквар</p> 
+							</div>
+						</a>
+						<div class="price">10</div>
+						<div class="quantity">
+							<a href="#" class="quantity__less"></a>
+							<input type="text" class="quantity__input" placeholder="100 шт">
+							<a href="#" class="quantity__more"></a>
+						</div>
+						<div class="catalog__buy">
+							<button class="btn">в корзину</button>
+						</div>
+					</div>
+				</div>
+				<div class="catalog__item">
+					<div class="catalog__in">
+						<a href="#" class="catalog__link">
+							<div class="catalog__img">
+								<img src="img/img1.png" alt="">
+							</div>
+							<div class="catalog__name">
+								<p>сп 36х34х10</p>
+								<p>Блоссом антквар</p> 
+							</div>
+						</a>
+						<div class="price">10</div>
+						<div class="quantity">
+							<a href="#" class="quantity__less"></a>
+							<input type="text" class="quantity__input" placeholder="100 шт">
+							<a href="#" class="quantity__more"></a>
+						</div>
+						<div class="catalog__buy">
+							<button class="btn">в корзину</button>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		<!-- END  catalog-->
+		</div>
+		<!-- END  content-->
+	</div>
+	<div class="push"></div>
+</div>
+<!-- END out-->
+<!-- BEGIN  footer-->
+<footer class="footer">
+	<div class="wrap row">
+		<div class="copyrights">
+			<p>© 2006-2014 luxplast</p>
+			<p>Все права защищены <span>| HostCMS</span></p>
+		</div>
+		<nav class="footer__catalog">
+			<ul>
+				<li><a href="#">Пакеты с петлевой ручкой</a></li>
+				<li><a href="#">Пакеты с пластиковой ручкой</a></li>
+				<li><a href="#">Пакеты с прорубной ручкой</a></li>
+			</ul>
+		</nav>
+		<nav class="footer__nav">
+			<ul>
+				<li><a href="#">О компании</a></li>
+				<li><a href="#">Блог</a></li>
+				<li><a href="#">Доставка</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</nav>
+		<div class="socials">
+			<p>Luxplast в соцсетях</p>
+			<div class="socials__links">
+				<a href="#" class="fb"><i></i></a>
+				<a href="#" class="vk"><i></i></a>
+				<a href="#" class="tw"><i></i></a>
+			</div>
+		</div>
+		<div class="design">
+			<p>Разработка дизайна</p>
+			<p>Антон Пономарев</p>
+		</div>
+	</div>
+</footer>
+<!-- END  footer-->
+<!-- BEGIN menu-->
+<div class="menu js-menu">
+	<div class="menu__in">
+		<div class="menu__topper">
+			<h1 class="logo">
+				<a href="#">laxplast</a>
+			</h1>
+			<div class="nav-btn-wrap">
+				<button class="nav-btn js-nav-btn"></button>
+			</div>
+		</div>
+		<nav class="menu__nav">
+			<ul>
+				<li><a href="#">О компании</a></li>
+				<li><a href="#">Блог</a></li>
+				<li><a href="#">Поддержка</a></li>
+				<li><a href="#">Доставка</a></li>
+				<li><a href="#">Вход</a></li>
+				<li><a href="#">Регистрация</a></li>
+			</ul>
+		</nav>
+	</div>
+</div>
+<!-- END menu-->
+<!-- load scripts -->
+<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+</body>
+</html>
