@@ -475,7 +475,7 @@ body.no-scroll, html.no-scroll { overflow: hidden; }
   .product__item .product__order .quantity { -moz-transform: translateY(0); -ms-transform: translateY(0); -webkit-transform: translateY(0); transform: translateY(0); opacity: 1; }
   .product__item:hover { box-shadow: none; } }
 @media only screen and (max-width: 480px) { .product__item { display: flex; flex-direction: column; } }
-.product__img { float: left; width: 96px; height: 96px; border: 1px solid #efefef; background: white; text-align: center; font-size: 0; }
+.product__img { position: relative; float: left; overflow: hidden; width: 96px; height: 96px; border: 1px solid #efefef; background: white; text-align: center; font-size: 0; }
 .product__img:before { content: ""; display: inline-block; width: 0; height: 100%; vertical-align: middle; }
 .product__img img { display: inline-block; vertical-align: middle; }
 @media only screen and (max-width: 480px) { .product__img { float: none; order: 1; width: 100%; } }
