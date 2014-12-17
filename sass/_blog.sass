@@ -1,0 +1,58 @@
+// styles for blog pages
+.blog
+    padding-top: 25px
+    .pagination
+        margin-top: 30px
+    &__list
+        margin-left: -20px
+        font-size: 0
+        +r(940)
+            margin-left: -2%
+        +r(768)
+            margin-left: 0     
+    &__item
+        display: inline-block
+        vertical-align: top
+        margin-left: 20px
+        margin-bottom: 30px
+        width: 580px
+        +clr
+        +r(1600)
+            width: 460px
+        +r(960)
+            width: 48%
+            margin-left: 2%
+        +r(768)
+            width: 100%
+            margin-left: 0         
+    &__img
+        float: left
+        width: 160px
+        margin-right: 20px
+        font-size: 0
+        img
+            width: 100%
+        +r(480)
+            float: none
+            width: 100%
+            margin-left: 0
+            text-align: center
+            margin-bottom: 15px   
+    &__content
+        overflow: hidden
+        font-size: 13px
+        color: #8b8b8b
+        line-height: 1.2
+        & > p
+            margin-bottom: 5px
+    &__title
+        display: block
+        text-decoration: none
+        font-size: 16px
+        color: #333
+        margin-bottom: 8px
+        line-height: 1.2
+        +tr(color 200ms)
+        &:hover
+            color: #d42125 
+                   

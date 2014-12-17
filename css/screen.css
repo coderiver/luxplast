@@ -629,3 +629,21 @@ body.no-scroll, html.no-scroll { overflow: hidden; }
 .coupon__input { width: 135px; height: 38px; border-radius: 1px; padding: 0 5px; border: 1px solid #d3d2d2; background-color: white; box-shadow: inset 0 0 5px rgba(1, 1, 1, 0.3); font-family: "Roboto", sans-serif; font-size: 14px; }
 .coupon__apply { display: inline-block; vertical-align: middle; font-size: 16px; color: #dd2d31; background: transparent; }
 @media only screen and (max-width: 600px) { .coupon__apply { width: 100%; text-align: center; margin-bottom: 15px; } }
+
+.blog { padding-top: 25px; }
+.blog .pagination { margin-top: 30px; }
+.blog__list { margin-left: -20px; font-size: 0; }
+@media only screen and (max-width: 940px) { .blog__list { margin-left: -2%; } }
+@media only screen and (max-width: 768px) { .blog__list { margin-left: 0; } }
+.blog__item { display: inline-block; vertical-align: top; margin-left: 20px; margin-bottom: 30px; width: 580px; *zoom: 1; }
+.blog__item:after { content: " "; display: table; clear: both; }
+@media only screen and (max-width: 1600px) { .blog__item { width: 460px; } }
+@media only screen and (max-width: 960px) { .blog__item { width: 48%; margin-left: 2%; } }
+@media only screen and (max-width: 768px) { .blog__item { width: 100%; margin-left: 0; } }
+.blog__img { float: left; width: 160px; margin-right: 20px; font-size: 0; }
+.blog__img img { width: 100%; }
+@media only screen and (max-width: 480px) { .blog__img { float: none; width: 100%; margin-left: 0; text-align: center; margin-bottom: 15px; } }
+.blog__content { overflow: hidden; font-size: 13px; color: #8b8b8b; line-height: 1.2; }
+.blog__content > p { margin-bottom: 5px; }
+.blog__title { display: block; text-decoration: none; font-size: 16px; color: #333333; margin-bottom: 8px; line-height: 1.2; -moz-transition: color 200ms; -o-transition: color 200ms; -webkit-transition: color 200ms; transition: color 200ms; }
+.blog__title:hover { color: #d42125; }
