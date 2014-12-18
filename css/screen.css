@@ -739,7 +739,9 @@ body.no-scroll, html.no-scroll { overflow: hidden; }
 .delivery__item { margin-bottom: 15px; }
 .delivery__item > p { font-size: 14px; color: #8b8b8b; line-height: 1; }
 
-.history__title { font-weight: 300; font-size: 24px; color: #37393a; margin-bottom: 15px; }
+.history__title { font-weight: 300; font-size: 24px; color: #37393a; margin-bottom: 15px; line-height: 1.2; }
+.history__title a { text-decoration: none; color: #da292d; }
+.history__title.is-empty { margin-bottom: 60px; }
 .history__wrap { overflow: auto; margin-bottom: 45px; }
 .history__table { width: 100%; min-width: 600px; border-collapse: collapse; }
 .history__table thead { border-bottom: 1px solid #efefef; height: 100%; }
