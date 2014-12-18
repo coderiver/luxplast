@@ -1107,9 +1107,101 @@
 				&:hover
 					color: #dd2d31	 		
 				
-
-
-
+// 404 page
+.error
+	&__bg
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		z-index: 1
+		font-size: 0
+		text-align: center
+		&:after
+			content: ""
+			display: inline-block
+			width: 0
+			height: 100%
+			vertical-align: middle 
+		img
+			display: inline-block
+			vertical-align: middle
+			max-width: 100%
+	&__content
+		position: absolute		
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		z-index: 2
+		font-size: 0
+		text-align: center
+		&:after
+			content: ""
+			display: inline-block
+			width: 0
+			height: 100%
+			vertical-align: middle
+	&__topper
+		display: inline-block
+		vertical-align: middle
+		font-size: 24px
+		padding-top: 40px
+		color: #37393a
+		max-width: 700px
+		font-weight: 300
+		line-height: 1
+		+r(768)
+			font-size: 22px
+		+r(600)
+			font-size: 20px	
+		.h2
+			margin-bottom: 15px
+	&__menu
+		position: absolute
+		bottom: 30px
+		left: 0
+		right: 0
+		font-size: 16px
+		text-align: center
+		z-index: 2
+		+r(568)
+			bottom: 0 
+	&__categories
+		margin-bottom: 10px
+		font-size: 0
+		li
+			display: inline-block
+			vertical-align: middle
+			margin-left: 22px
+			&:first-child
+				margin-left: 0
+			+r(600)
+				display: block
+				text-align: center
+				margin-left: 0	
+			a
+				font-size: 16px
+				color: #d42125
+				text-decoration: none
+				+r(568)
+					font-size: 14px
+	&__nav
+		margin-bottom: 10px
+		font-size: 0
+		li
+			display: inline-block
+			vertical-align: middle
+			margin-left: 22px
+			&:first-child
+				margin-left: 0
+			a
+				font-size: 16px
+				color: #333
+				text-decoration: none
+				+r(568)
+					font-size: 14px		 		 		
 
 
 
