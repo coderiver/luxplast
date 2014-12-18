@@ -1,6 +1,17 @@
 // styles for profile
-.profile
-    padding-top: 25px
+.profile    
+    &.profile_order
+        margin-bottom: 55px 
+    &__top
+        +clr
+        margin-bottom: 25px
+        .h2
+            overflow: hidden
+    &__back
+        float: right
+        +r(600)
+            float: none
+            margin-bottom: 15px
     &__topper
         +clr
     &__title
@@ -39,7 +50,9 @@
         float: right
         +clr
         +r(600)
-            float: none                    
+            float: none
+    &__text
+        font-size: 14px                            
 .current-email
     font-size: 14px
     color: #8b8b8b
@@ -106,6 +119,9 @@
             font-size: 14px
             color: #8b8b8b
             line-height: 1
+        &.link
+            .input
+                color: #d42125    
 .history
     &__title
         font-weight: 300
@@ -133,19 +149,29 @@
                 vertical-align: middle
                 font-size: 13px
                 color: #8b8b8b
-                &:first-child
-                    width: 22%
-                &:nth-child(2)
-                    width: 23%
-                &:nth-child(3)
-                    width: 27%
-                &:nth-child(4)
-                    width: 20%
                 &:last-child
                     width: 8%    
         tbody
             tr
-                border-bottom: 1px solid #efefef 
+                border-bottom: 1px solid #efefef
+                &.tfoot
+                    background: #f0f0f0
+                    border-bottom: 1px solid #fff
+                    td
+                        font-weight: bold
+                        .price
+                            font-weight: bold
+                    .tfoot__title
+                        padding: 0 16px
+                &.bottom
+                    background: #e7e7e7
+                    border-bottom: none
+                    td
+                        font-weight: bold
+                        .price
+                            font-weight: bold
+                    .tfoot__title
+                        padding: 0 16px            
             td
                 height: 52px
                 vertical-align: middle
@@ -164,4 +190,5 @@
                     text-decoration: none
                     +tr(color 200ms)
                     &:hover
-                        color: #da292d        
+                        color: #da292d
+                                
