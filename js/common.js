@@ -102,6 +102,28 @@ head.ready(function() {
 		event.stopPropagation();
 	})
 
+// profile edit
+
+	function edit(){
+		var editable = $('.js-edit'),
+			btn = $('.js-edit-btn'),
+			item = editable.find('.input');
+
+		btn.on('click', function() {
+			if ($(this).hasClass('is-editable')) {
+				$(this).removeClass('is-editable').text('изменить');
+				item.attr('readonly', 'readonly');
+			}
+			else{
+				$(this).addClass('is-editable').text('сохранить');
+				item.removeAttr('readonly');
+			};
+		})	
+	};
+	if ($('.js-edit').length) {
+		edit();
+	};
+
 // document click
 
 	$(document).on('click', function(event){

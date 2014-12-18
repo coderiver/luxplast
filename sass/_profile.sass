@@ -1,0 +1,161 @@
+// styles for profile
+.profile
+    padding-top: 25px
+    &__topper
+        +clr
+    &__title
+        float: left
+        font-size: 24px
+        color: #37393a
+        font-weight: 300
+    &__quit
+        float: right
+        padding-top: 10px
+        margin-bottom: 20px
+        a
+            font-size: 14px
+            color: #d42125
+            text-decoration: none
+    &__block
+        margin-bottom: 20px
+    &__name
+        height: 44px
+        padding: 0 20px
+        font-size: 16px 
+        line-height: 44px
+        border-bottom: 1px solid #fff
+        background: #e7e7e7
+    &__content
+        background: #f0f0f0
+        padding: 20px
+        +r(600)
+            padding: 20px 10px 
+    &__left
+        float: left
+        +r(600)
+            float: none
+            margin-bottom: 15px
+    &__right
+        float: right
+        +clr
+        +r(600)
+            float: none                    
+.current-email
+    font-size: 14px
+    color: #8b8b8b
+    a
+        color: #d42125
+        text-decoration: none            
+.email
+    position: relative
+    float: left
+    .dropdown
+        top: 28px
+        left: -64px
+        padding-top: 20px
+        &:before
+            top: 7px
+        +r(600)
+            left: 0
+            &:before
+                margin-left: -72px     
+    &:hover
+        .dropdown
+            opacity: 1
+            visibility: visible     
+.password
+    position: relative
+    float: left
+    margin-left: 19px
+    +r(600)
+        margin-left: 0
+        float: right
+    .dropdown
+        top: 28px
+        right: 0px
+        padding-top: 20px
+        &:before
+            top: 7px
+            margin-left: 46px
+    &:hover
+        .dropdown
+            opacity: 1
+            visibility: visible
+// delivery
+.delivery
+    display: table
+    width: 100% 
+    &__col
+        display: table-cell
+        width: 44%
+        padding-right: 10px
+        +r(600)
+            display: block
+            width: 100% 
+    &__change
+        display: table-cell
+        vertical-align: bottom
+        text-align: right
+        width: 12%
+        +r(600)
+            display: block
+            width: 100% 
+    &__item
+        margin-bottom: 15px
+        & > p
+            font-size: 14px
+            color: #8b8b8b
+            line-height: 1
+.history
+    &__title
+        font-weight: 300
+        font-size: 24px
+        color: #37393a
+        margin-bottom: 15px
+    &__wrap
+        overflow: auto
+        margin-bottom: 45px 
+    &__table
+        width: 100%
+        min-width: 600px 
+        border-collapse: collapse
+        thead
+            border-bottom: 1px solid #efefef
+            height: 100%  
+            td
+                height: 52px
+                vertical-align: middle
+                font-size: 13px
+                color: #8b8b8b
+                &:first-child
+                    width: 22%
+                &:nth-child(2)
+                    width: 23%
+                &:nth-child(3)
+                    width: 27%
+                &:nth-child(4)
+                    width: 20%
+                &:last-child
+                    width: 8%    
+        tbody
+            tr
+                border-bottom: 1px solid #efefef 
+            td
+                height: 52px
+                vertical-align: middle
+                color: #37393a
+                font-size: 16px
+                sup
+                    position: relative
+                    top: -7px
+                    font-size: 10px
+                .price
+                    font-size: 16px
+                    font-weight: normal
+                    margin-bottom: 0      
+                a
+                    color: #37393a
+                    text-decoration: none
+                    +tr(color 200ms)
+                    &:hover
+                        color: #da292d        
