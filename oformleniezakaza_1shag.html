@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>lichniycabinet</title>
+	<title>oformleniezakaza_1shag</title>
 	<meta name="viewport" content="initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <meta name="viewport" content="width=1200"> -->
@@ -376,169 +376,89 @@
 	<div class="wrap">
 		<!-- BEGIN  content-->
 		<div class="content">
-			<div class="profile">
-				<div class="profile__top">
-					<h2 class="h2">личный кабинет</h2>
-				</div>
-				<div class="profile__topper">
-					<div class="profile__title">Настройки</div>
-					<div class="profile__quit"><a href="#">Выйти</a></div>
-				</div>
+			<div class="checkout profile">
+				<h2 class="h2">оформление заказа</h2>
+				<ul class="checkout__progress">
+					<li class="is-active"><p>Контактные данные</p><i></i></li>
+					<li><p>Доставка и оплата</p><i></i></li>
+					<li><p>Отправка заказа</p><i></i></li>
+				</ul>
+				<div class="checkout__title">Укажите контактную информацию</div>
 				<div class="profile__block">
-					<div class="profile__name">Приватность</div>
+					<div class="profile__name">
+						<label class="radio">
+							<input type="radio" name="checkout">
+							<span>Использовать информацию из профиля</span>
+						</label>
+					</div>
 					<div class="profile__content">
-						<div class="clr">
-							<div class="profile__left">
-								<div class="current-email">Е-мейл:<a href="mailto:rg@gmail.com">rg@gmail.com</a></div>
-							</div>
-							<div class="profile__right">
-								<div class="email">
-									<button class="btn">сменить е-мейл</button>
-									<div class="dropdown">
-										<div class="dropdown__in">
-											<div class="form">
-												<form>
-													<div class="form__row">
-														<p>введите новый е-мейл:</p>
-														<input type="text" class="input">
-													</div>
-													<div class="form__submit">
-														<button type="submit" class="btn">отправить</button>
-													</div>
-												</form>
-											</div>
-										</div>
+						<div class="form form_login">
+							<form>
+								<div class="form__row">
+									<p>Е-мейл</p>
+									<input type="text" class="input">
+								</div>
+								<div class="form__row">
+									<p>Пароль</p>
+									<input type="text" class="input">
+								</div>
+								<div class="form__row">
+									<div class="restore">
+										<span>Забыли пароль?</span>
+										<a href="#">Регистрация</a>
 									</div>
 								</div>
-								<div class="password">
-									<button class="btn">сменить пароль</button>
-									<div class="dropdown">
-										<div class="dropdown__in">
-											<div class="form">
-												<form>
-													<div class="form__row">
-														<p>введите новый пароль:</p>
-														<input type="text" class="input">
-													</div>
-													<div class="form__row">
-														<p>подтвердите новый пароль:</p>
-														<input type="text" class="input">
-													</div>
-													<div class="form__submit">
-														<button type="submit" class="btn">отправить</button>
-													</div>
-												</form>
-											</div>
-										</div>
-									</div>
+								<div class="form__submit">
+									<button class="btn">войти</button>
 								</div>
-							</div>
+							</form>
 						</div>
 					</div>
 				</div>
 				<div class="profile__block">
-					<div class="profile__name">Курьерская доставка</div>
+					<div class="profile__name">
+						<label class="radio">
+							<input type="radio" name="checkout">
+							<span>Ввести информацию вручную</span>
+						</label>
+					</div>
 					<div class="profile__content">
-						<div class="delivery js-edit">
-							<div class="delivery__col">
-								<div class="delivery__item">
-									<p>Контактное лицо:</p>
-									<input type="text" class="input" value="Пономарев Антон Владимирович" readonly>
+						<div class="form form_long">
+							<form>
+								<div class="form__row">
+									<p>Имя</p>
+									<input type="text" class="input">
 								</div>
-								<div class="delivery__item">
-									<p>Контактный телефон:</p>
-									<input type="text" class="input" value="+7 910 913 73 47" readonly>
+								<div class="form__row">
+									<p>Мобильный телефон</p>
+									<input type="text" class="input">
 								</div>
-								<div class="delivery__item">
-									<p>Город:</p>
-									<input type="text" class="input" value="Ростов на Дону" readonly>
+								<div class="form__row">
+									<p>Е-мейл</p>
+									<input type="text" class="input">
 								</div>
-							</div>
-							<div class="delivery__col">
-								<div class="delivery__item">
-									<p>Компания:</p>
-									<input type="text" class="input" value="Люксофт Энтерпрайз" readonly>
-								</div>
-								<div class="delivery__item">
-									<p>Адрес:</p>
-									<input type="text" class="input" value="Москва, 2-й Хорошевский проезд, д.7" readonly>
-								</div>
-							</div>
-							<div class="delivery__change">
-								<button class="btn js-edit-btn">изменить</button>
-							</div>
+							</form>
 						</div>
 					</div>
 				</div>
-				<div class="history">
-					<div class="history__title">История заказов</div>
-					<div class="history__wrap">
-						<table class="history__table">
-							<thead>
-								<td>Номер заказа</td>
-								<td>Дата заказа</td>
-								<td>Сумма заказа</td>
-								<td>Вес</td>
-								<td>Объем</td>
-							</thead>
-							<tbody>
-								<tr>
-									<td><a href="#">456456809</a></td>
-									<td>12.03.2014</td>
-									<td><span class="price">2500</span></td>
-									<td>1 кг</td>
-									<td>1 м<sup>3</sup></td>
-								</tr>
-								<tr>
-									<td><a href="#">456456809</a></td>
-									<td>12.03.2014</td>
-									<td><span class="price">2500</span></td>
-									<td>1 кг</td>
-									<td>1 м<sup>3</sup></td>
-								</tr>
-								<tr>
-									<td><a href="#">456456809</a></td>
-									<td>12.03.2014</td>
-									<td><span class="price">2500</span></td>
-									<td>1 кг</td>
-									<td>1 м<sup>3</sup></td>
-								</tr>
-								<tr>
-									<td><a href="#">456456809</a></td>
-									<td>12.03.2014</td>
-									<td><span class="price">2500</span></td>
-									<td>1 кг</td>
-									<td>1 м<sup>3</sup></td>
-								</tr>
-								<tr>
-									<td><a href="#">456456809</a></td>
-									<td>12.03.2014</td>
-									<td><span class="price">2500</span></td>
-									<td>1 кг</td>
-									<td>1 м<sup>3</sup></td>
-								</tr>
-								<tr>
-									<td><a href="#">456456809</a></td>
-									<td>12.03.2014</td>
-									<td><span class="price">2500</span></td>
-									<td>1 кг</td>
-									<td>1 м<sup>3</sup></td>
-								</tr>
-							</tbody>
-						</table>
+				<div class="profile__block">
+					<div class="profile__name">
+						Дополнительная информация
 					</div>
-					<div class="pagination">
-						<ul class="pagination__list">
-							<li><a href="#" class="is-active">1</a></li>
-							<li><a href="#">2</a></li>
-							<li><a href="#">3</a></li>
-							<li><a href="#">4</a></li>
-							<li><a href="#">5</a></li>
-							<li>...</li>
-							<li><a href="#">15</a></li>
-						</ul>
+					<div class="profile__content">
+						<div class="form">
+							<form>
+								<div class="form__row">
+									<p>Ваш текст</p>
+									<textarea class="textarea"></textarea>
+								</div>
+							</form>
+						</div>
 					</div>
 				</div>
+				<div class="checkout__next">
+					<button class="btn">продолжить оформление</button>
+				</div>	
 			</div>
 		</div>
 		<!-- END  content-->
