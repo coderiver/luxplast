@@ -30,7 +30,7 @@
 			width: auto			
 	&__tools
 		float: left
-		padding-top: 40px
+		padding-top: 36px
 	&__right
 		float: right
 		width: 300px
@@ -209,10 +209,10 @@
 	position: relative
 	margin-left: 20px
 	float: left
-	padding-left: 80px
-	width: 380px
+	//padding-left: 80px
+	width: 300px
 	+r(1600)
-		width: 300px
+		width: 220px
 	+r(960)
 		width: auto
 		padding-left: 90px
@@ -235,7 +235,7 @@
 				top: 27px  	 
 	&__in
 		position: relative 
-		margin-top: 33px
+		margin-top: 29px
 		padding-right: 30px
 		.callback-wrap
 			position: absolute
@@ -273,8 +273,8 @@
 .m-bag
 	position: relative
 	float: right
-	margin-top: 45px
-	padding-left: 36px
+	margin-top: 40px
+	padding-left: 42px
 	font-size: 14px
 	&:hover
 		.m-bag__number
@@ -360,8 +360,8 @@
 		display: none	
 	&__col3
 		float: left
-		width: 386px
-		margin-left: 10px
+		width: 380px
+		margin-left: 20px
 		&:first-child
 			margin-left: 0 
 		&:hover
@@ -369,12 +369,13 @@
 				visibility: visible
 				opacity: 1 
 		+r(1600)
-			width: 306px
+			width: 300px
 		+r(960)
 			float: none
 			display: inline-block
 			vertical-align: top
-			width: 240px	
+			width: 240px
+			margin-left: 10px 	
 		&:nth-child(2)
 			.submenu__dropdown
 				&:before
@@ -504,7 +505,7 @@
 // banner
 .banner
 	position: relative
-	margin-bottom: 20px
+	margin-bottom: 31px
 	min-height: 425px 
 	z-index: 1
 	+r(768)
@@ -584,7 +585,7 @@
 		display: none!important
 .slick-dots
 	position: absolute
-	bottom: 27px
+	bottom: 25px
 	left: 50%
 	+transform(translateX(-50%))
 	li
@@ -617,7 +618,7 @@
 // m-benefits
 .m-benefits
 	position: relative
-	margin-bottom: 21px
+	margin-bottom: 32px
 	+r(768)
 		display: none
 	&__list
@@ -666,21 +667,22 @@
 			color: #8b8b8b
 			text-decoration: none	
 		&.individual
-			padding-left: 60px 
+			padding-left: 50px 
 			&:before
 				content: ""
 				position: absolute
 				top: 50%
 				+transform(translateY(-50%))
-				left: 0
+				left: -14px
 				+s(icon1)
 		&.wholesale
+			padding-left: 74px
 			&:before
 				content: ""
 				position: absolute
 				top: 50%
 				+transform(translateY(-50%))
-				left: 5px
+				left: 13px
 				+s(icon2)
 		&.exclusive
 			&:before
@@ -691,12 +693,13 @@
 				left: 5px
 				+s(icon3)		
 		&.delivery
+			padding-left: 79px 
 			&:before
 				content: ""
 				position: absolute
 				top: 50%
 				+transform(translateY(-50%))
-				left: 5px
+				left: 12px
 				+s(icon4)
 		&.gifts
 			&:before
@@ -795,7 +798,7 @@
 		img
 			max-width: 100%		
 	&__name
-		margin-bottom: 9px
+		margin-bottom: 2px
 		font-size: 16px
 		color: #37393a
 		line-height: 1.2
@@ -815,7 +818,7 @@
 	position: relative
 	display: inline-block
 	font-size: 22px
-	margin-bottom: 10px
+	margin-bottom: 16px
 	font-weight: bold
 	&:after
 		content: "a"
@@ -892,7 +895,7 @@
 		font-size: 24px
 		font-weight: bold
 		color: #333
-		margin-bottom: 25px
+		margin-bottom: 18px
 		text-transform: uppercase
 		&:before
 			content: ""
@@ -909,12 +912,12 @@
 			padding: 0 14px
 			z-index: 2
 	&__item
-		margin-bottom: 40px
+		margin-bottom: 37px
 		& > p
 			font-size: 13px
 			color: #8b8b8b
-			margin-bottom: 5px
-			line-height: 1.2  		  
+			margin-bottom: 13px
+			line-height: 1.3  		  
 	&__link
 		display: inline-block
 		margin-bottom: 8px
@@ -929,7 +932,7 @@
 // footer
 .footer
 	position: relative
-	padding-top: 30px
+	padding-top: 27px
 	background: #222
 	height: 140px
 	z-index: 2
