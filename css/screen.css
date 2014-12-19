@@ -793,6 +793,10 @@ body.no-scroll, html.no-scroll { overflow: hidden; }
 .checkout__next { text-align: right; margin: 32px 0 34px; }
 @media only screen and (max-width: 940px) { .checkout__next { padding: 0 20px; } }
 @media only screen and (max-width: 600px) { .checkout__next { padding: 0 10px; } }
+.checkout__option { margin-bottom: 30px; background: #e7e7e7; padding: 11px 20px; }
+.checkout__option label { display: inline-block; margin-right: 110px; }
+@media only screen and (max-width: 768px) { .checkout__option label { display: block; margin-right: 0; margin-top: 15px; }
+  .checkout__option label:first-child { margin-top: 0; } }
 
 .restore span { display: block; font-size: 14px; color: #37393a; }
 .restore a { color: #dd2d31; text-decoration: none; }
