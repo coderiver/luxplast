@@ -797,6 +797,17 @@ body.no-scroll, html.no-scroll { overflow: hidden; }
 .checkout__option label { display: inline-block; margin-right: 110px; }
 @media only screen and (max-width: 768px) { .checkout__option label { display: block; margin-right: 0; margin-top: 15px; }
   .checkout__option label:first-child { margin-top: 0; } }
+.checkout__success { font-size: 13px; color: #8b8b8b; padding-bottom: 55px; border-bottom: 1px solid #efefef; margin-bottom: 35px; }
+.checkout__success img { float: left; margin-right: 28px; margin-bottom: 28px; }
+@media only screen and (max-width: 768px) { .checkout__success { padding-bottom: 35px; } }
+.checkout__bottom { *zoom: 1; margin-bottom: 110px; }
+.checkout__bottom:after { content: " "; display: table; clear: both; }
+@media only screen and (max-width: 768px) { .checkout__bottom { margin-bottom: 55px; } }
+@media only screen and (max-width: 480px) { .checkout__bottom { margin-bottom: 30px; } }
+.checkout__left { float: left; }
+@media only screen and (max-width: 600px) { .checkout__left { float: none; margin-bottom: 15px; } }
+.checkout__right { float: right; }
+@media only screen and (max-width: 600px) { .checkout__right { float: none; } }
 
 .restore span { display: block; font-size: 14px; color: #37393a; }
 .restore a { color: #dd2d31; text-decoration: none; }

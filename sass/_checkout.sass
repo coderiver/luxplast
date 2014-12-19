@@ -76,7 +76,35 @@
                 margin-right: 0
                 margin-top: 15px
                 &:first-child
-                    margin-top: 0                                      
+                    margin-top: 0
+    &__success
+        font-size: 13px
+        color: #8b8b8b
+        padding-bottom: 55px
+        border-bottom: 1px solid #efefef
+        margin-bottom: 35px    
+        img
+            float: left
+            margin-right: 28px
+            margin-bottom: 28px
+        +r(768)
+            padding-bottom: 35px     
+    &__bottom
+        +clr
+        margin-bottom: 110px
+        +r(768)
+            margin-bottom: 55px
+        +r(480)
+            margin-bottom: 30px
+    &__left
+        float: left
+        +r(600)
+            float: none
+            margin-bottom: 15px 
+    &__right
+        float: right
+        +r(600)        
+            float: none
 .restore
     span
         display: block
