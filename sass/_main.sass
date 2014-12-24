@@ -38,10 +38,6 @@
 			display: none
 .registration
 	position: relative
-	&:hover
-		.dropdown_registration
-			visibility: visible
-			opacity: 1
 	&__link
 		font-size: 14px
 		color: #37393a
@@ -62,12 +58,11 @@
 	.dropdown
 		top: 22px
 		left: -100px
-.login
-	position: relative
-	&:hover
-		.dropdown_login
+		&.is-open
 			visibility: visible
 			opacity: 1
+.login
+	position: relative
 	&__socials
 		padding: 17px 20px 20px
 		background: #f0f0f0
@@ -95,7 +90,10 @@
 		left: -100px
 		padding-top: 37px
 		&:before
-			top: 24px				
+			top: 24px
+		&.is-open
+			visibility: visible
+			opacity: 1					
 .form
 	text-align: left
 	padding: 30px 17px 15px
@@ -209,14 +207,9 @@
 	position: relative
 	margin-left: 20px
 	float: left
-	//padding-left: 80px
-	width: 300px
-	+r(1600)
-		width: 220px
 	+r(960)
-		width: auto
 		padding-left: 90px
-	+r(600)
+	+r(640)
 		padding-left: 45px
 	+r(568)
 		position: absolute
@@ -235,31 +228,8 @@
 				top: 27px  	 
 	&__in
 		position: relative 
-		margin-top: 29px
-		padding-right: 30px
-		.callback-wrap
-			position: absolute
-			top: 50%
-			margin-top: -15px
-			right: 0
-			&:hover
-				.dropdown
-					visibility: visible
-					opacity: 1 
-			.callback
-				+s(phone)
-				cursor: pointer
-			.dropdown
-				top: 31px
-				left: -120px
-				padding-top: 16px
-				&:before
-					top: 3px
-				+r(568)
-					left: -216px
-					&:before
-						margin-left: 0
-						left: 83%	 			
+		margin-top: 24px
+		padding-left: 40px
 		& > p
 			color: #8b8b8b
 			font-size: 14px
@@ -269,7 +239,38 @@
 			font-size: 28px
 			font-weight: bold
 			color: #333
-			line-height: 1 
+			line-height: 1
+	&__icon
+		position: absolute
+		top: 50%
+		margin-top: -3px
+		left: 0
+		+s(phone)
+		cursor: pointer	 			
+.callback
+	position: relative
+	display: inline-block
+	margin-bottom: 5px
+	&:hover
+		.dropdown
+			visibility: visible
+			opacity: 1
+		& > a
+			color: #000	
+	& > a
+		color: #9c9c9c
+		+tr(color 200ms)
+		&:hover
+			color: #000
+	.dropdown
+		top: 18px
+		left: -68px
+		padding-top: 16px
+		&:before
+			top: 3px
+		+r(568)
+			left: 50%
+			margin-left: -130px		 		 
 .m-bag
 	position: relative
 	float: right
