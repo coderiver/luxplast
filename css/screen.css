@@ -362,8 +362,9 @@ body.no-scroll, html.no-scroll { overflow: hidden; }
 
 .new { background: #00bcd4; }
 
-.btn { display: inline-block; height: 28px; line-height: 28px; padding: 0 11px; text-decoration: none; background: #de2e32; background-image: -moz-linear-gradient(#de2e32, #d42125); background-image: -webkit-linear-gradient(#de2e32, #d42125); background-image: linear-gradient(#de2e32, #d42125); font-size: 12px; text-transform: uppercase; color: white; box-shadow: 0 2px 4px rgba(1, 1, 1, 0.17); }
+.btn { display: inline-block; height: 28px; line-height: 28px; padding: 0 11px; text-decoration: none; background: #de2e32; background-image: -moz-linear-gradient(#de2e32, #d42125); background-image: -webkit-linear-gradient(#de2e32, #d42125); background-image: linear-gradient(#de2e32, #d42125); font-size: 12px; -moz-transition: background 200ms; -o-transition: background 200ms; -webkit-transition: background 200ms; transition: background 200ms; text-transform: uppercase; color: white; box-shadow: 0 2px 4px rgba(1, 1, 1, 0.17); }
 .btn.btn_big { height: 38px; line-height: 38px; font-size: 16px; font-weight: 600; }
+.btn:hover { background: #e6353a; background-image: -moz-linear-gradient(#e93d42, #e22c31); background-image: -webkit-linear-gradient(#e93d42, #e22c31); background-image: linear-gradient(#e93d42, #e22c31); }
 
 .m-blog { position: relative; z-index: 1; }
 @media only screen and (max-width: 768px) { .m-blog { display: none; } }

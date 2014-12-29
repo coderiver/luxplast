@@ -875,6 +875,7 @@
 	background: #de2e32
 	+g(#de2e32, #d42125)
 	font-size: 12px
+	+tr(background 200ms)
 	text-transform: uppercase
 	color: #fff 
 	box-shadow: 0 2px 4px rgba(1,1,1,.17)
@@ -883,7 +884,9 @@
 		line-height: 38px
 		font-size: 16px
 		font-weight: 600  
-
+	&:hover
+		background: #e6353a
+		+g(#e93d42, #e22c31)
 // m-blog
 .m-blog
 	position: relative
