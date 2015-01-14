@@ -44,6 +44,7 @@
         +r(480)
             float: left
         li
+            +arial
             margin-left: 25px 
             &:first-child
                 margin-left: 0
@@ -156,24 +157,39 @@
     &__name
         overflow: hidden
         height: 96px
-        padding: 0 10px 0 29px 
+        padding: 5px 10px 0 29px 
         line-height: 1
         color: #37393a
         font-size: 0
-        &:before
-            content: ""
-            display: inline-block
-            width: 0
-            height: 100%
-            vertical-align: middle
-        span
-            display: inline-block
-            vertical-align: middle
-            font-size: 16px
         +r(768)
+            &:before
+                content: ""
+                display: inline-block
+                width: 0
+                height: 100%
+                vertical-align: middle
+        span
+            display: block
+            margin-bottom: 5px 
+            +arial
+            font-size: 16px
+        ul
+            font-size: 14px
+            color: #8b8b8b
+            li
+                margin-bottom: 3px       
+        +r(900)
             padding: 0 10px
             span
                 font-size: 13px
+            ul
+                font-size: 11px
+        +r(768)
+            span
+                display: inline-block
+                vertical-align: middle
+            ul
+                display: none             
         +r(600)
             span
                 font-size: 14px

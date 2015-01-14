@@ -12,10 +12,10 @@ head.ready(function() {
 
 	function headerScroll(){
 		if ($(window).scrollTop() > 1) {
-			$('.header__in').addClass('is-sticky');
+			$('.header').addClass('is-sticky');
 		}
 		else{
-			$('.header__in').removeClass('is-sticky');
+			$('.header').removeClass('is-sticky');
 		}
 	}
 	headerScroll();	
@@ -25,11 +25,15 @@ head.ready(function() {
 	function dropdown() {
 		var btn = $('.js-dropdown');
 		btn.on('click', function(){
+			$('.dropdown').removeClass('is-open');
 			$(this).parent().find('.dropdown').toggleClass('is-open');
 			event.stopPropagation();
 		});
 	}
 	dropdown();
+	$('.js-dropdown-close').on('click', function(){
+		$(this).parents('.dropdown').removeClass('is-open');
+	});
 	$('.dropdown').on('click', function(){
 		event.stopPropagation();
 	})
@@ -62,10 +66,8 @@ head.ready(function() {
 		$(this).parent().toggleClass('is-open');
 		$('body').toggleClass('no-scroll');
 		$('html').toggleClass('no-scroll');
-		return false;
-	});
-	$('.js-mob-menu').on('click', function(){
 		event.stopPropagation();
+		return false;
 	});
 
 // main page catalog scroll
@@ -149,6 +151,36 @@ head.ready(function() {
 		$('.js-feedback-popup').removeClass('is-open');
 		$('.dropdown').removeClass('is-open');
 	});
+
+// map
+	
+  if ($('.map-wrap').length) {
+    ymaps.ready(function () {
+      var myMap = new ymaps.Map('YMapsID', {
+          center: [47.687408, 40.199497],
+          zoom: 17,
+          controls: []
+      });
+      myMap.behaviors.disable('scrollZoom');
+     // Создаем метку с помощью вспомогательного класса.
+        myPlacemark1 = new ymaps.Placemark([47.687408, 40.199497], {
+            // Свойства.
+            
+            balloonContent: 'Luxplast',
+            hintContent: 'г. Шахты . Ростовская обл.'
+        }, {
+            // Опции.
+            // Стандартная фиолетовая иконка.
+            iconLayout: 'default#image',
+            iconImageSize: [87, 87],
+            iconImageHref: '../img/marker.png'
+           
+        });
+
+     myMap.geoObjects.add(myPlacemark1)
+
+    });
+  };
 
 // scroll
 	$(window).scroll(function(){
