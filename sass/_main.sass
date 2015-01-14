@@ -305,7 +305,13 @@
 			color: #9c9c9c
 		.dropdown
 			visibility: visible
-			opacity: 1	
+			opacity: 1
+	&.m-bag_inactive
+		opacity: 0.7
+		.m-bag__number
+			color: #9c9c9c
+		.m-bag__value
+			color: #9c9c9c			
 	&:before
 		content: ""
 		position: absolute
@@ -370,7 +376,8 @@
 	position: relative
 	padding-top: 21px
 	height: 77px
-	background: #e7e7e7 
+	background: #e7e7e7
+	box-shadow: inset 2px 3px 6px -2px rgba(0, 0, 0, 0.4)
 	z-index: 2
 	&.submenu_index
 		position: absolute
@@ -881,12 +888,18 @@
 		vertical-align: middle
 	&__less
 		+s(less)
+		+tr(opacity 200ms)
+		&:hover
+			opacity: 0.5
 		&.is-disabled
-			+s(less-dsb)
+			opacity: 0.5
 	&__more
 		+s(more)
+		+tr(opacity 200ms)
+		&:hover
+			opacity: 0.5
 		&.is-disabled
-			+s(more-dsb)
+			opacity: 0.5
 	&__input
 		width: 91px
 		height: 28px
