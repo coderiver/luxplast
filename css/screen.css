@@ -750,7 +750,8 @@ body.no-scroll, html.no-scroll { overflow: hidden; }
 .profile__topper:after { content: " "; display: table; clear: both; }
 .profile__title { float: left; font-size: 24px; color: #37393a; font-weight: 300; }
 .profile__quit { float: right; padding-top: 10px; margin-bottom: 20px; }
-.profile__quit a { font-size: 14px; color: #d42125; text-decoration: none; }
+.profile__quit a { font-size: 14px; color: #d42125; text-decoration: none; -moz-transition: color 200ms; -o-transition: color 200ms; -webkit-transition: color 200ms; transition: color 200ms; }
+.profile__quit a:hover { color: black; }
 .profile__block { margin-bottom: 20px; font-family: Arial, sans-serif; }
 .profile__name { padding: 10px 20px; font-size: 16px; border-bottom: 1px solid white; background: #e7e7e7; }
 .profile__content { background: #f0f0f0; padding: 20px; }
@@ -758,6 +759,7 @@ body.no-scroll, html.no-scroll { overflow: hidden; }
 .profile__content .form .textarea { height: 110px; }
 .profile__content .form.form_login { max-width: 260px; }
 .profile__content .form.form_long { max-width: 420px; }
+.profile__content .dropdown .form { padding: 30px 17px 15px; }
 @media only screen and (max-width: 600px) { .profile__content { padding: 20px 10px; } }
 .profile__left { float: left; }
 @media only screen and (max-width: 600px) { .profile__left { float: none; margin-bottom: 15px; } }
@@ -792,7 +794,8 @@ body.no-scroll, html.no-scroll { overflow: hidden; }
 .delivery__item.link .input { color: #d42125; }
 
 .history__title { font-weight: 300; font-size: 24px; color: #37393a; margin-bottom: 15px; line-height: 1.2; }
-.history__title a { text-decoration: none; color: #da292d; }
+.history__title a { text-decoration: none; color: #da292d; -moz-transition: color 200ms; -o-transition: color 200ms; -webkit-transition: color 200ms; transition: color 200ms; }
+.history__title a:hover { color: black; }
 .history__title.is-empty { margin-bottom: 60px; }
 .history__wrap { overflow: auto; margin-bottom: 45px; }
 .history__table { width: 100%; min-width: 600px; border-collapse: collapse; }
