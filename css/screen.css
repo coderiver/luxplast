@@ -110,6 +110,8 @@ body.no-scroll, html.no-scroll { overflow: hidden; }
 
 .remove-ico { background: url('../img/icons-sdbd8f27409.png') 0 -1107px no-repeat; width: 18px; height: 17px; cursor: pointer; }
 
+.js-clone-img { position: absolute; z-index: 999; -moz-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
+
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
 .l .l-col1 { float: left; width: 20%; }
@@ -374,7 +376,7 @@ body.no-scroll, html.no-scroll { overflow: hidden; }
 
 @media only screen and (max-width: 786px) { .catalog .slick-track { border-bottom: 1px solid #efefef; } }
 
-.price { position: relative; display: inline-block; font-size: 22px; margin-bottom: 16px; font-weight: bold; }
+.price { position: relative; display: inline-block; font-size: 22px; margin-bottom: 17px; font-weight: bold; }
 .price:after { content: "a"; font-family: "rouble"; text-transform: lowercase; }
 
 .quantity { font-size: 0; margin-bottom: 10px; }

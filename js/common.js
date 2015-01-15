@@ -184,12 +184,48 @@ head.ready(function() {
 
 // animation "item to basket"
 
+	function buyPacket(){
+		
+		// function body
+		var btn = $('.js-packet-btn'),
+			finishY = ($(window).scrollTop() + 20);
+		
+		btn.on('click', function(){
+			
+			// vars
+			var img = $(this).parents('.js-packet').find('img'),
+				width = img.width(),
+				height = img.height(),
+				startX = img.offset().left,
+				startY = img.offset().top;
+			
+			// clone img
+			var cloneImg = img.clone(); 
+			$('body').after(cloneImg);
+			
+			//set options to cloned img
+			cloneImg.addClass('js-clone-img');
+			cloneImg.css({top: startY, left: startX});
+			
+			// animation
+			$('.js-clone-img').animate({
+				top: $(window).scrollTop() + 20,
+				left: $('.m-bag').offset().left,
+				width: width*0.3,
+				height: height*0.3
+			}, 600, function(){
+				cloneImg.remove();
+			});
 
+		});
+	}	
+	buyPacket();
 
 
 // scroll
 	$(window).scroll(function(){
 		headerScroll();
+		//buyPacket();
 	});
 
 // resize
