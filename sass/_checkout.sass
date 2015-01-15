@@ -71,7 +71,6 @@
         label
             display: inline-block
             margin-right: 110px
-            +arial
             +r(768)
                 display: block
                 margin-right: 0
@@ -108,10 +107,16 @@
         +r(600)        
             float: none
 .restore
-    span
-        display: block
+    &__pass
+        text-decoration: none
         font-size: 14px
         color: #37393a
-    a
+        +tr(color 200ms)
+        &:hover
+            color: #dd2d31
+    &__reg
         color: #dd2d31
-        text-decoration: none        
+        text-decoration: none
+        +tr(color 200ms)
+        &:hover
+            color: #000       

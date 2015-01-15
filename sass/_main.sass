@@ -3,10 +3,10 @@
 .header
 	position: relative
 	z-index: 9
-	+r(568)
-		height: 168px
 	&__wrap
 		height: 92px
+		+r(768)
+			height: 72px
 		.is-sticky &
 			height: 72px 
 	&__in
@@ -18,16 +18,18 @@
 		background: #FFF
 		z-index: 999
 		+gpu
+		+r(768)
+			height: 72px
+			box-shadow: 0 0 4px 2px #bababa
 		.is-sticky &
 			height: 72px
 			box-shadow: 0 0 4px 2px #bababa
-			.phone
-				+r(568)
-					box-shadow: 0 5px 7px -4px #bababa
 			.nav-btn-wrap
 				padding-top: 29px
 			.phone__in
-				margin-top: 12px
+				margin-top: 11px
+				+r(640)
+					margin-top: 27px
 			.header__tools
 				padding-top: 15px
 			.m-bag
@@ -129,6 +131,8 @@
 	z-index: 999
 	+r(960)
 		display: block
+	+r(768)
+		padding-top: 18px	
 	.is-sticky &
 		padding-top: 18px
 	&.is-open
@@ -157,8 +161,10 @@
 		right: 0
 		width: 320px
 		background: #fff
-		box-shadow: 0 2px 3px 1px #ccc
+		box-shadow: 0 1px 2px 0px #8F8F8F
 		overflow-y: auto
+		+r(768)
+			top: 64px
 		+rh(480)
 			max-height: 388px
 		+rh(360)
@@ -206,10 +212,18 @@
 		display: block
 		+hidetext
 		+s(logo)
+	+r(768)
+		min-width: 146px
+		a
+			+s(logo-small)
+	+r(640)
+		min-width: 1px			
 	.is-sticky &
 		min-width: 146px
 		a	
 			+s(logo-small)
+		+r(640)
+			min-width: 1px	
 .nav-btn-wrap
 	float: left
 	margin-left: 48px 
@@ -227,27 +241,19 @@
 	+r(960)
 		padding-left: 90px
 	+r(640)
-		padding-left: 45px
-	+r(568)
-		position: absolute
-		top: 92px
-		left: 0
-		right: 0
-		margin-left: 0
-		height: 76px
 		padding-left: 0
-		background: #efefef
-		text-align: center
-		.phone__in
-			display: inline-block
-			margin-top: 15px
-			&:before
-				top: 27px
-		.is-sticky &
-			top: 72px		  	 
+		margin-left: 24%
+	+r(480)
+		margin-left: 18%
+	+r(360)
+		margin-left: 8%				  	 
 	&__in
 		position: relative 
 		margin-top: 35px
+		+r(768)
+			margin-top: 11px
+		+r(640)
+			margin-top: 27px	
 		& > p
 			color: #8b8b8b
 			font-size: 14px
@@ -257,20 +263,15 @@
 			font-size: 24px
 			font-weight: bold
 			color: #333
-			line-height: 1			
+			line-height: 1
+			+r(480)
+				font-size: 18px			
 .callback
 	position: relative
 	display: inline-block
-	//padding-left: 20px
-	//&:before
-		//content: ""
-		//position: absolute
-		//top: 3px
-		//left: 0
-		//+s(phone-gray)
+	+r(640)
+		display: none
 	&:hover
-		//&:before
-			//+s(phone)
 		.dropdown
 			visibility: visible
 			opacity: 1

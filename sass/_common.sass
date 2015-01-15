@@ -143,6 +143,39 @@ body, html
 			top: 5px
 			left: 2px
 			+s(checked)		
+.radio
+	position: relative
+	font-family: 'Roboto', sans-serif
+	+nosel
+	input[type="radio"]
+		position: absolute
+		opacity: 0
+	input + span
+		position: relative
+		display: inline-block
+		padding-left: 26px
+		&:before
+			content: ""
+			position: absolute
+			top: 3px
+			left: 0
+			width: 15px
+			height: 15px
+			border: 1px solid #b7c3c9
+			border-radius: 7px
+			background-color: #fffeff
+			box-shadow: 0 2px 0 rgba(255,255,255,.5), inset 0 1px 1px rgba(0,0,0,.17)
+			+g(rgba(184,195,201,.25), rgba(219,224,227,.25))
+	input:checked + span
+		&:after
+			content: ""
+			position: absolute
+			top: 8px
+			left: 5px
+			width: 5px
+			height: 5px
+			border-radius: 50%
+			background: #484848 
 
 // pagination
 
