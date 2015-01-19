@@ -145,7 +145,7 @@ body.no-scroll, html.no-scroll { overflow: hidden; }
 .registration .dropdown { top: 22px; left: -100px; }
 .registration .dropdown.is-open { visibility: visible; opacity: 1; }
 
-.login { position: relative; }
+.login { position: relative; margin-bottom: 4px; }
 .login__socials { padding: 17px 20px 20px; background: #f0f0f0; }
 .login__socials > p { color: #37393a; font-size: 24px; font-weight: 300; line-height: 1; margin-bottom: 15px; }
 .login__socials > ul { font-size: 0; }
@@ -233,7 +233,7 @@ body.no-scroll, html.no-scroll { overflow: hidden; }
 .m-bag.m-bag_inactive .m-bag__number { color: #9c9c9c; }
 .m-bag.m-bag_inactive .m-bag__value { color: #9c9c9c; }
 .m-bag:before { content: ""; position: absolute; top: 6px; left: 0; background: url('../img/icons-sdbd8f27409.png') 0 0 no-repeat; width: 25px; height: 25px; }
-.m-bag__number { color: #d42125; -moz-transition: color 200ms; -o-transition: color 200ms; -webkit-transition: color 200ms; transition: color 200ms; }
+.m-bag__number { margin-bottom: 6px; color: #d42125; -moz-transition: color 200ms; -o-transition: color 200ms; -webkit-transition: color 200ms; transition: color 200ms; }
 .m-bag__value { color: #37393a; -moz-transition: color 200ms; -o-transition: color 200ms; -webkit-transition: color 200ms; transition: color 200ms; }
 .m-bag .dropdown { top: 38px; left: -117px; }
 .m-bag__topper { height: 87px; padding-top: 22px; font-size: 24px; line-height: 1; font-weight: 300; }
