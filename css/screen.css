@@ -233,7 +233,7 @@ body.no-scroll, html.no-scroll { overflow: hidden; }
 .m-bag.m-bag_inactive { opacity: 0.7; }
 .m-bag.m-bag_inactive .m-bag__number { color: #9c9c9c; }
 .m-bag.m-bag_inactive .m-bag__value { color: #9c9c9c; }
-.m-bag:before { content: ""; position: absolute; top: 10px; left: 0; background: url('../img/icons-sdbd8f27409.png') 0 0 no-repeat; width: 25px; height: 25px; }
+.m-bag:before { content: ""; position: absolute; top: 12px; left: 0; background: url('../img/icons-sdbd8f27409.png') 0 0 no-repeat; width: 25px; height: 25px; }
 .is-sticky .m-bag:before { top: 14px; }
 .m-bag__number { margin-bottom: 5px; color: #d42125; -moz-transition: color 200ms; -o-transition: color 200ms; -webkit-transition: color 200ms; transition: color 200ms; }
 .m-bag__value { color: #37393a; -moz-transition: color 200ms; -o-transition: color 200ms; -webkit-transition: color 200ms; transition: color 200ms; }
