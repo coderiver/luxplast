@@ -25,7 +25,7 @@
 			height: 72px
 			box-shadow: 0 0 4px 2px #bababa
 			.nav-btn-wrap
-				padding-top: 27px
+				padding-top: 35px
 			.phone__in
 				margin-top: 14px
 				+r(640)
@@ -76,7 +76,7 @@
 			opacity: 1
 .login
 	position: relative
-	margin-bottom: 4px
+	margin-bottom: 3px
 	&__socials
 		padding: 17px 20px 20px
 		background: #f0f0f0
@@ -206,7 +206,7 @@
 					color: #d92125 	
 .logo
 	float: left
-	padding-top: 15px
+	padding-top: 17px
 	+r(960)
 		margin-left: 15px
 	a
@@ -221,6 +221,7 @@
 		min-width: 1px			
 	.is-sticky &
 		min-width: 146px
+		padding-top: 11px  
 		a	
 			+s(logo-small)
 		+r(640)
@@ -228,7 +229,7 @@
 .nav-btn-wrap
 	float: left
 	margin-left: 48px 
-	padding-top: 54px
+	padding-top: 56px
 	font-size: 0
 	+r(960)
 		display: none		
@@ -301,7 +302,7 @@
 .m-bag
 	position: relative
 	float: right
-	margin-top: 40px
+	margin-top: 37px
 	padding-left: 42px
 	font-size: 14px
 	&:hover
@@ -321,13 +322,16 @@
 	&:before
 		content: ""
 		position: absolute
-		top: 6px
+		top: 10px
 		left: 0
 		+s(basket)
+	.is-sticky
+		&:before
+			top: 14px	
 	&__number
-		margin-bottom: 6px
+		margin-bottom: 5px
 		color: #d42125
-		+tr(color 200ms)
+		+tr(color 200ms) 
 	&__value
 		color: #37393a
 		+tr(color 200ms)
