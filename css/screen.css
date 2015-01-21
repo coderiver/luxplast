@@ -145,7 +145,7 @@ body.no-scroll, html.no-scroll { overflow: hidden; }
 .registration .dropdown { top: 22px; left: -100px; }
 .registration .dropdown.is-open { visibility: visible; opacity: 1; }
 
-.login { position: relative; margin-bottom: 3px; }
+.login { position: relative; margin-bottom: 4px; }
 .login__socials { padding: 17px 20px 20px; background: #f0f0f0; }
 .login__socials > p { color: #37393a; font-size: 24px; font-weight: 300; line-height: 1; margin-bottom: 15px; }
 .login__socials > ul { font-size: 0; }
@@ -226,16 +226,15 @@ body.no-scroll, html.no-scroll { overflow: hidden; }
 .callback .dropdown:before { top: 3px; }
 @media only screen and (max-width: 568px) { .callback .dropdown { left: 50%; margin-left: -130px; } }
 
-.m-bag { position: relative; float: right; margin-top: 37px; padding-left: 42px; font-size: 14px; }
+.m-bag { position: relative; float: right; margin-top: 36px; padding-left: 42px; font-size: 14px; }
 .m-bag:hover .m-bag__number { color: #9c9c9c; }
 .m-bag:hover .m-bag__value { color: #9c9c9c; }
 .m-bag:hover .dropdown { visibility: visible; opacity: 1; }
 .m-bag.m-bag_inactive { opacity: 0.7; }
 .m-bag.m-bag_inactive .m-bag__number { color: #9c9c9c; }
 .m-bag.m-bag_inactive .m-bag__value { color: #9c9c9c; }
-.m-bag:before { content: ""; position: absolute; top: 12px; left: 0; background: url('../img/icons-sdbd8f27409.png') 0 0 no-repeat; width: 25px; height: 25px; }
-.is-sticky .m-bag:before { top: 14px; }
-.m-bag__number { margin-bottom: 5px; color: #d42125; -moz-transition: color 200ms; -o-transition: color 200ms; -webkit-transition: color 200ms; transition: color 200ms; }
+.m-bag:before { content: ""; position: absolute; top: 14px; left: 0; background: url('../img/icons-sdbd8f27409.png') 0 0 no-repeat; width: 25px; height: 25px; }
+.m-bag__number { margin-bottom: 6px; color: #d42125; -moz-transition: color 200ms; -o-transition: color 200ms; -webkit-transition: color 200ms; transition: color 200ms; }
 .m-bag__value { color: #37393a; -moz-transition: color 200ms; -o-transition: color 200ms; -webkit-transition: color 200ms; transition: color 200ms; }
 .m-bag .dropdown { top: 38px; left: -117px; }
 .m-bag__topper { height: 87px; padding-top: 22px; font-size: 24px; line-height: 1; font-weight: 300; }
