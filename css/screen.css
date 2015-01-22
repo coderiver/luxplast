@@ -127,7 +127,7 @@ body.no-scroll, html.no-scroll { overflow: hidden; }
 .is-sticky .header__in .nav-btn-wrap { padding-top: 35px; }
 .is-sticky .header__in .phone__in { margin-top: 14px; }
 @media only screen and (max-width: 640px) { .is-sticky .header__in .phone__in { margin-top: 27px; } }
-.is-sticky .header__in .header__tools { padding-top: 14px; }
+.is-sticky .header__in .header__tools { padding-top: 15px; }
 .is-sticky .header__in .m-bag { margin-top: 15px; }
 .header__left { float: left; width: 380px; }
 @media only screen and (max-width: 1600px) { .header__left { width: 300px; } }
@@ -193,7 +193,7 @@ body.no-scroll, html.no-scroll { overflow: hidden; }
 @media only screen and (max-width: 768px) { .logo { min-width: 146px; }
   .logo a { background: url('../img/icons-sdbd8f27409.png') 0 -641px no-repeat; width: 75px; height: 44px; } }
 @media only screen and (max-width: 640px) { .logo { min-width: 1px; } }
-.is-sticky .logo { min-width: 146px; padding-top: 11px; }
+.is-sticky .logo { min-width: 146px; padding-top: 10px; }
 .is-sticky .logo a { background: url('../img/icons-sdbd8f27409.png') 0 -641px no-repeat; width: 75px; height: 44px; }
 @media only screen and (max-width: 640px) { .is-sticky .logo { min-width: 1px; } }
 
