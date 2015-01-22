@@ -145,7 +145,7 @@ body.no-scroll, html.no-scroll { overflow: hidden; }
 .registration .dropdown { top: 22px; left: -100px; }
 .registration .dropdown.is-open { visibility: visible; opacity: 1; }
 
-.login { position: relative; margin-bottom: 4px; }
+.login { position: relative; margin-bottom: 3px; }
 .login__socials { padding: 17px 20px 20px; background: #f0f0f0; }
 .login__socials > p { color: #37393a; font-size: 24px; font-weight: 300; line-height: 1; margin-bottom: 15px; }
 .login__socials > ul { font-size: 0; }
