@@ -431,14 +431,14 @@
 				border-bottom: 1px solid #e02e00
 				border-right: 1px solid #e02e00
 				&:hover
-					background: lighten(#fd470e, 10%)
+					background: lighten(#fd470e, 5%)
 		&:last-child
 			.submenu__link
 				background: #fe6c3e
 				border-bottom: 1px solid #e33e1b
 				border-right: 1px solid #e33e1b
 				&:hover
-					background: lighten(#fe6c3e, 10%)
+					background: lighten(#fe6c3e, 5%)
 			.submenu__dropdown
 				&:before
 					left: 82%
@@ -460,7 +460,7 @@
 		+tr(all 200ms)
 		text-align: left
 		&:hover
-			background: lighten(#e33105, 10%)
+			background: lighten(#e33105, 5%)
 			box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.5)
 		&.is-active
 			background-color: #9d9d9d
@@ -607,6 +607,9 @@
 		font-weight: bold
 		text-transform: uppercase
 		line-height: 1
+		+tr(text-shadow 200ms)
+		&:hover
+			text-shadow: 1px 1px 1px #ccc 
 		+r(568)
 			font-size: 28px	
 	&__text
@@ -695,7 +698,7 @@
 			width: 25%
 			&.wide
 				display: none		
-		+r(1023)
+		+r(768)
 			width: 33.3%
 			&.tablet
 				display: none		
@@ -724,12 +727,12 @@
 		line-height: 1
 		color: #8b8b8b
 		+tr(color 200ms)
-		//&:hover
-		//	color: #37393a
 		span
 			font-size: 19px
 			color: #8b8b8b
-			text-decoration: none	
+			text-decoration: none
+		+r(1024)
+			font-size: 16px 		
 		&.individual
 			padding-left: 50px 
 			&:before
@@ -739,6 +742,9 @@
 				+transform(translateY(-50%))
 				left: -14px
 				+s(icon1)
+			+r(1024)
+				&:before
+					left: -9px	
 		&.wholesale
 			padding-left: 74px
 			&:before
