@@ -1,0 +1,87 @@
+/*
+Error: Undefined mixin 'r'.
+        on line 9 of D:/WORK/coderiver/laxplast-folder/luxplast/sass/_blog.sass, in `r'
+        from line 9 of D:/WORK/coderiver/laxplast-folder/luxplast/sass/_blog.sass
+
+4:     .pagination
+5:         margin-top: 30px
+6:     &__list
+7:         margin-left: -20px
+8:         font-size: 0
+9:         +r(940)
+10:             margin-left: -2%
+11:         +r(768)
+12:             margin-left: 0     
+13:     &__item
+14:         display: inline-block
+
+Backtrace:
+D:/WORK/coderiver/laxplast-folder/luxplast/sass/_blog.sass:9:in `r'
+D:/WORK/coderiver/laxplast-folder/luxplast/sass/_blog.sass:9
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:338:in `block in visit_mixin'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/stack.rb:98:in `block in with_mixin'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/stack.rb:98:in `with_mixin'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:336:in `visit_mixin'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `map'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `map'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `map'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:157:in `visit'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:8:in `visit'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:36:in `css_tree'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:20:in `render'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/engine.rb:268:in `render'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `each'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/compass-1.0.1/lib/compass/sass_compiler.rb:40:in `compile!'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/compass-1.0.1/lib/compass/commands/update_project.rb:49:in `perform'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/compass-1.0.1/lib/compass/commands/base.rb:18:in `execute'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/compass-1.0.1/lib/compass/commands/project_base.rb:19:in `execute'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/compass-1.0.1/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/compass-1.0.1/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/compass-1.0.1/bin/compass:30:in `block in <top (required)>'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/compass-1.0.1/bin/compass:44:in `call'
+c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/compass-1.0.1/bin/compass:44:in `<top (required)>'
+c:/Program Files (x86)/Prepros/resources/app/ruby/loader.rb:15:in `load'
+c:/Program Files (x86)/Prepros/resources/app/ruby/loader.rb:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'r'.\A         on line 9 of D:/WORK/coderiver/laxplast-folder/luxplast/sass/_blog.sass, in `r'\A         from line 9 of D:/WORK/coderiver/laxplast-folder/luxplast/sass/_blog.sass\A \A 4:     .pagination\A 5:         margin-top: 30px\A 6:     &__list\A 7:         margin-left: -20px\A 8:         font-size: 0\A 9:         +r(940)\A 10:             margin-left: -2%\A 11:         +r(768)\A 12:             margin-left: 0     \A 13:     &__item\A 14:         display: inline-block"; }

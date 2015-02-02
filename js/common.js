@@ -162,6 +162,7 @@ head.ready(function() {
           controls: []
       });
       myMap.behaviors.disable('scrollZoom');
+      myMap.behaviors.disable('multiTouch');
      // Создаем метку с помощью вспомогательного класса.
         myPlacemark1 = new ymaps.Placemark([47.687408, 40.199497], {
             // Свойства.
@@ -173,7 +174,7 @@ head.ready(function() {
             // Стандартная фиолетовая иконка.
             iconLayout: 'default#image',
             iconImageSize: [87, 87],
-            iconImageHref: '../img/marker.png'
+            iconImageHref: 'img/marker.png'
            
         });
 
